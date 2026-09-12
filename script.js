@@ -5,62 +5,76 @@
   var faqItems = document.querySelectorAll(".faq-item");
   faqItems.forEach(function (item) {
     var q = item.querySelector(".faq-q");
+    var a = item.querySelector(".faq-a");
     q.addEventListener("click", function () {
-      var wasOpen = item.classList.contains("open");
-      faqItems.forEach(function (i) { i.classList.remove("open"); });
-      if (!wasOpen) item.classList.add("open");
+      var isOpen = item.classList.contains("open");
+      faqItems.forEach(function (i) {
+        i.classList.remove("open");
+        i.querySelector(".faq-a").style.display = "none";
+      });
+      if (!isOpen) {
+        item.classList.add("open");
+        a.style.display = "block";
+      }
     });
   });
 
   /* ---------- Pricing calculator ---------- */
-  var sizes = [2500, 5000, 10000, 25000, 50000, 100000, 150000, 200000, 300000, 400000];
-  // base one-time fee at two-step model, 90% split, per size
-  var baseFees = [14, 24, 39, 79, 129, 249, 349, 439, 599, 749];
-
-  var sizeInput = document.getElementById("size");
-  var splitInput = document.getElementById("split");
-  var modelButtons = document.querySelectorAll(".model-choice button");
-
-  var currentModel = { name: "two", label: "Two-step", mult: 1, days: "14 days" };
-  var modelMeta = {
-    two: { label: "Two-step", mult: 1, days: "14 days" },
-    one: { label: "One-step", mult: 1.35, days: "7 days" },
-    instant: { label: "Instant", mult: 3, days: "Same day" }
+  var fees = {
+    2500: 14, 5000: 24, 10000: 39, 25000: 79, 50000: 129,
+    100000: 249, 200000: 439, 300000: 599, 400000: 749
   };
+  var avgRewards = {
+    2500: 300, 5000: 550, 10000: 900, 25000: 1800, 50000: 3000,
+    100000: 5400, 200000: 9200, 300000: 12800, 400000: 16000
+  };
+  var modelMult = { instant: 3, one: 1.35, two: 1 };
 
-  function fmt(n) {
-    return "$" + Math.round(n).toLocaleString("en-US");
-  }
+  var state = { size: 100000, model: "instant", split: false };
+
+  var sizeButtons = document.querySelectorAll(".size-grid button");
+  var modelButtons = document.querySelectorAll(".model-select button");
+  var splitToggle = document.getElementById("splitToggle");
+
+  function fmt(n) { return "$" + Math.round(n).toLocaleString("en-US"); }
 
   function update() {
-    var idx = Math.min(parseInt(sizeInput.value, 10), sizes.length - 1);
-    var size = sizes[idx];
-    var fee = baseFees[idx] * currentModel.mult;
-    var splitOn = splitInput.value === "1";
-    var split = splitOn ? 100 : 90;
-    if (splitOn) fee = fee * 1.15;
+    var base = fees[state.size] * modelMult[state.model];
+    var split = state.split ? 100 : 90;
+    if (state.split) base *= 1.15;
+    var was = base / 0.75;
 
-    document.getElementById("sizeLabel").textContent = fmt(size);
-    document.getElementById("splitLabel").textContent = split + "%";
-    document.getElementById("outSize").textContent = fmt(size);
-    document.getElementById("outModel").textContent = currentModel.label;
+    document.getElementById("outFee").textContent = fmt(base);
+    document.getElementById("outWas").textContent = fmt(was);
     document.getElementById("outSplit").textContent = split + "%";
-    document.getElementById("outPayout").textContent = currentModel.days;
-    document.getElementById("outFee").textContent = fmt(fee);
+    document.getElementById("outAvgReward").textContent = fmt(avgRewards[state.size]);
   }
 
-  sizeInput.addEventListener("input", update);
-  splitInput.addEventListener("input", update);
+  sizeButtons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      sizeButtons.forEach(function (b) { b.classList.remove("active"); });
+      btn.classList.add("active");
+      state.size = parseInt(btn.getAttribute("data-size"), 10);
+      update();
+    });
+  });
 
   modelButtons.forEach(function (btn) {
     btn.addEventListener("click", function () {
       modelButtons.forEach(function (b) { b.classList.remove("active"); });
       btn.classList.add("active");
-      var key = btn.getAttribute("data-model");
-      currentModel = { name: key, label: modelMeta[key].label, mult: modelMeta[key].mult, days: modelMeta[key].days };
+      state.model = btn.getAttribute("data-model");
       update();
     });
   });
+
+  if (splitToggle) {
+    splitToggle.addEventListener("click", function () {
+      state.split = !state.split;
+      splitToggle.classList.toggle("active");
+      update();
+    });
+  }
 
   update();
 })();
