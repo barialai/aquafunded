@@ -1,393 +1,516 @@
-/* ===== Tokens ===== */
-:root {
-  --blue: #1C7FF2;
-  --blue-dark: #0D5FD1;
-  --blue-pale: #EAF2FE;
-  --ink: #0F172A;
-  --slate: #64748B;
-  --cream: #F3EEE3;
-  --pale: #F3F6FC;
-  --line: #E7EBF3;
-  --orange: #F5952B;
-  --navy: #060B14;
-  --radius-lg: 24px;
-  --radius-md: 16px;
-  --radius-sm: 10px;
-  --max: 1180px;
-  font-size: 16px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tidewater | Funded Trading Capital, Kept Simple</title>
+<meta name="description" content="Trade with Tidewater's capital. Pass one evaluation, get funded up to $400k, and keep up to 100% of what you earn.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+<div class="promo-bar">
+  <div class="wrap">
+    <span>💳 25% Off + 150% Refund</span>
+    <span>⏱ Limited Time</span>
+    <span>Code: <strong>BACK2WORK</strong></span>
+  </div>
+</div>
 
-body {
-  margin: 0;
-  background: #fff;
-  color: var(--ink);
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  line-height: 1.55;
-  -webkit-font-smoothing: antialiased;
-}
+<header class="site-header">
+  <div class="wrap">
+    <a href="#" class="brand"><img src="images/logo-mark.svg" alt="">Tidewater</a>
+    <nav class="main-nav">
+      <a href="#pricing">Markets</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#rewards">Rewards</a>
+      <a href="#">Affiliate</a>
+      <a href="#">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#" class="btn btn-login">Login</a>
+      <a href="#pricing" class="btn btn-primary">Get Funded</a>
+    </div>
+  </div>
+</header>
 
-h1, h2, h3, h4 {
-  font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  margin: 0;
-  color: var(--ink);
-}
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"><img src="images/hero-orbs.svg" alt="" style="width:100%;height:100%;object-fit:cover;"></div>
+  <div class="wrap">
+    <div class="avatar-row">
+      <div class="avatar-stack">
+        <span class="av">JM</span><span class="av">RK</span><span class="av">HW</span>
+      </div>
+      <span style="font-size:0.92rem;font-weight:600;">Join <strong>300,000+ Traders</strong></span>
+    </div>
+    <div class="rating-pill">
+      <span><b>9.4/10</b> ★</span><span class="sep">|</span><span>From <b>5k+</b> verified reviews</span>
+    </div>
+    <h1>Dive into Success with our <span class="accent">Capital</span></h1>
+    <p class="lede">Trade with our capital and <strong>keep 100% of the profit</strong>, paid on demand.</p>
+    <div class="hero-cta"><a href="#pricing" class="btn btn-primary">Get Funded</a></div>
+    <div class="hero-note-row">
+      <span><span class="dot-icon"></span>Reward Guarantee</span>
+      <span><span class="dot-icon"></span>Millions Paid to Traders</span>
+    </div>
 
-a { color: inherit; text-decoration: none; }
-img { max-width: 100%; display: block; }
-button { font-family: inherit; }
+    <div class="offer-banner">
+      <div>
+        <div style="font-size:0.85rem;opacity:0.85;">BACK2WORK</div>
+        <div class="big">25% OFF + 150% Refund</div>
+      </div>
+      <div class="code-tag">⏱ Limited Time · Code: BACK2WORK</div>
+    </div>
+  </div>
+</section>
 
-:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+<section>
+  <div class="wrap">
+    <div class="trust-row">
+      <div class="trust-card cream">
+        <h3>Payout Guarantee</h3>
+        <p class="sub">No denials</p>
+        <div class="payout-mock">
+          <div>
+            <div class="lbl">Payment received!</div>
+            <div class="amt">$2,428</div>
+          </div>
+          <div style="font-size:1.4rem;">📈</div>
+        </div>
+      </div>
+      <div class="trust-card pale">
+        <h3>Your Favorite Trading Platforms</h3>
+        <div class="platform-grid">
+          <img src="images/icon-platform-1.svg" alt="">
+          <img src="images/icon-platform-2.svg" alt="">
+          <img src="images/icon-platform-3.svg" alt="">
+          <img src="images/icon-platform-4.svg" alt="">
+          <img src="images/icon-platform-1.svg" alt="">
+          <img src="images/icon-platform-3.svg" alt="">
+        </div>
+      </div>
+      <div class="trust-card blue">
+        <h3>24/7 Support</h3>
+        <p class="sub">Always here to help</p>
+        <div class="support-orbit">
+          <div class="ring r1"></div>
+          <div class="ring r2"></div>
+        </div>
+      </div>
+    </div>
+    <div class="center-cta"><a href="#pricing" class="btn btn-primary">Get Funded</a></div>
+  </div>
+</section>
 
-@media (prefers-reduced-motion: reduce) {
-  * { animation: none !important; transition: none !important; }
-}
+<section id="pricing">
+  <div class="wrap">
+    <div class="calc-shell">
+      <div class="section-head">
+        <h2>Choose your Account</h2>
+      </div>
+      <div class="toggle-pill">
+        <button class="active">CFDs</button>
+        <button>Futures</button>
+      </div>
 
-.wrap { max-width: var(--max); margin: 0 auto; padding: 0 32px; }
+      <div class="limited-bar">
+        <div class="left"><span>⏱ Limited Time</span><span>»</span><span>25% OFF + 150% Refund</span></div>
+        <div class="code">BACK2WORK <span style="opacity:0.8;">Copy</span></div>
+      </div>
 
-section { padding: 88px 0; }
-.section-head { max-width: 620px; margin: 0 auto 48px; text-align: center; }
-.section-head.left { text-align: left; margin: 0 0 44px; }
-.section-head h2 { font-size: clamp(1.9rem, 3.2vw, 2.6rem); line-height: 1.15; }
-.section-head p { color: var(--slate); margin-top: 14px; font-size: 1.02rem; }
-.eyebrow-pill {
-  display: inline-flex; align-items: center; gap: 8px;
-  background: var(--pale); border: 1px solid var(--line);
-  padding: 8px 16px; border-radius: 999px; font-size: 0.85rem;
-  font-weight: 600; color: var(--ink); margin-bottom: 18px;
-}
+      <div class="calc-grid">
+        <div>
+          <div class="calc-panel">
+            <h4>CFDs Model</h4>
+            <div class="pill-select model-select">
+              <button class="active" data-model="instant" data-mult="3">⚡ Instant · Most popular</button>
+              <button data-model="one" data-mult="1.35">One Step · New</button>
+              <button data-model="two" data-mult="1">Two Step</button>
+            </div>
+          </div>
+          <div class="calc-panel" style="margin-top:20px;">
+            <h4>Model Type</h4>
+            <div class="pill-select">
+              <button class="active">Standard</button>
+              <button>Pro · 6% max loss</button>
+            </div>
+            <h4 style="margin-top:22px;">Add-ons available at checkout</h4>
+            <div class="chip-select">
+              <button id="splitToggle">100% Profit Split</button>
+              <button>Swap Free</button>
+              <button>First Reward On Demand</button>
+            </div>
+            <div class="rules-table">
+              <div class="row"><span>Profit Split</span><strong id="outSplit">90%</strong></div>
+              <div class="row"><span>Rewards Cycle</span><strong>Bi-Weekly</strong></div>
+              <div class="row"><span>Min Trading Days</span><strong>5</strong></div>
+              <div class="row"><span>Leverage</span><strong>1:50</strong></div>
+            </div>
+          </div>
+        </div>
 
-/* ===== Buttons ===== */
-.btn {
-  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-  padding: 14px 28px; border-radius: 999px; font-weight: 600; font-size: 0.95rem;
-  cursor: pointer; border: 1px solid transparent; transition: transform 0.15s ease, background 0.15s ease;
-  white-space: nowrap;
-}
-.btn:hover { transform: translateY(-1px); }
-.btn-primary { background: var(--blue); color: #fff; }
-.btn-primary:hover { background: var(--blue-dark); }
-.btn-outline { background: #fff; border-color: var(--blue); color: var(--blue); }
-.btn-outline:hover { background: var(--blue-pale); }
-.btn-white { background: #fff; color: var(--blue-dark); }
-.btn-ghost-dark { background: rgba(255,255,255,0.12); color: #fff; border-color: rgba(255,255,255,0.35); }
-.btn-block { width: 100%; }
+        <div class="output-panel">
+          <h4>Account Size</h4>
+          <p class="help">Includes your 25% promo, plus extra for more accounts.</p>
+          <div class="size-grid">
+            <button data-size="2500">2.5K</button>
+            <button data-size="5000">5K</button>
+            <button data-size="10000">10K</button>
+            <button data-size="25000">25K</button>
+            <button data-size="50000">50K</button>
+            <button class="active" data-size="100000">100K</button>
+            <button data-size="200000">200K</button>
+            <button data-size="300000">300K</button>
+            <button data-size="400000">400K</button>
+          </div>
+          <div class="row" style="display:flex;justify-content:space-between;font-size:0.85rem;opacity:0.85;">
+            <span>Average Reward</span><strong id="outAvgReward">$5,400</strong>
+          </div>
+          <div class="price-row">
+            <span class="now" id="outFee">$420</span>
+            <span class="was" id="outWas">$560</span>
+          </div>
+          <div class="price-tag">One-time fee · 100% refundable</div>
+          <a href="#" class="btn btn-white btn-block">Get Funded</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-/* ===== Top promo bar ===== */
-.promo-bar {
-  background: linear-gradient(120deg, #2E8BF5, #1560D6);
-  border-radius: 0 0 28px 28px;
-  color: #fff;
-  padding: 14px 0;
-}
-.promo-bar .wrap {
-  display: flex; justify-content: center; align-items: center; gap: 28px;
-  font-size: 0.9rem; flex-wrap: wrap;
-}
-.promo-bar strong { font-weight: 700; }
+<section>
+  <div class="wrap">
+    <div class="press-strip">
+      <span>FinDaily</span><span>MarketPulse</span><span>TradeWire</span><span>GlobalFinance</span>
+    </div>
+  </div>
+</section>
 
-/* ===== Header ===== */
-.site-header { background: #fff; border-bottom: 1px solid transparent; }
-.site-header .wrap {
-  display: flex; align-items: center; justify-content: space-between; height: 84px; gap: 20px;
-}
-.brand { display: flex; align-items: center; gap: 10px; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.2rem; color: var(--blue); }
-.brand img { width: 34px; height: 34px; }
-.main-nav { display: flex; gap: 30px; align-items: center; }
-.main-nav a { font-size: 0.94rem; color: var(--ink); font-weight: 500; }
-.header-actions { display: flex; align-items: center; gap: 12px; }
-.header-actions .btn { padding: 11px 22px; font-size: 0.88rem; }
-.btn-login { border: 1px solid var(--line); color: var(--ink); background: #fff; }
+<section>
+  <div class="wrap">
+    <div class="stat-cards">
+      <div class="stat-card blue">
+        <div>
+          <div class="label">Total Rewards</div>
+          <div class="figure">$8,000,000+</div>
+        </div>
+        <div class="mini-bars"><span></span><span></span><span></span></div>
+      </div>
+      <div class="stack">
+        <div class="stat-card light">
+          <div class="label">Average Reward</div>
+          <div class="figure">$2,450</div>
+        </div>
+        <div class="stat-card light">
+          <div class="label">Highest Paid Trader</div>
+          <div class="figure">$119,175</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-/* ===== Hero ===== */
-.hero { position: relative; overflow: hidden; padding: 60px 0 0; text-align: center; }
-.hero-bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
-.hero .wrap { position: relative; z-index: 1; }
-.avatar-row { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 18px; }
-.avatar-stack { display: flex; }
-.avatar-stack .av {
-  width: 30px; height: 30px; border-radius: 50%; border: 2px solid #fff;
-  background: var(--blue-pale); margin-left: -8px; display: flex; align-items: center; justify-content: center;
-  font-size: 0.7rem; font-weight: 700; color: var(--blue-dark);
-}
-.avatar-stack .av:first-child { margin-left: 0; }
-.rating-pill {
-  display: inline-flex; align-items: center; gap: 10px; background: var(--pale);
-  border: 1px solid var(--line); border-radius: 999px; padding: 10px 18px; font-size: 0.9rem; margin-bottom: 26px;
-}
-.rating-pill b { font-weight: 700; }
-.rating-pill .sep { color: var(--line); }
-.hero h1 { font-size: clamp(2.4rem, 5.4vw, 4.1rem); line-height: 1.06; max-width: 16ch; margin: 0 auto; }
-.hero h1 .accent { color: var(--blue); }
-.hero p.lede { color: var(--slate); font-size: 1.1rem; max-width: 40ch; margin: 22px auto 0; }
-.hero p.lede strong { color: var(--ink); }
-.hero-cta { margin-top: 30px; }
-.hero-note-row { display: flex; justify-content: center; gap: 30px; margin-top: 26px; flex-wrap: wrap; }
-.hero-note-row span { display: inline-flex; align-items: center; gap: 8px; font-size: 0.88rem; color: var(--slate); font-weight: 500; }
-.hero-note-row .dot-icon { width: 18px; height: 18px; border-radius: 50%; background: var(--blue-pale); flex-shrink: 0; }
+<section id="how-it-works">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow-pill">⚙ Steps</div>
+      <h2>How it works?</h2>
+      <p>Your skills. Our risk.</p>
+    </div>
+    <div class="steps">
+      <div class="step-card">
+        <span class="step-tag">Step 1</span>
+        <div class="step-visual"></div>
+        <h3>Take a challenge</h3>
+        <p>Prove your skill, or skip it with instant funding.</p>
+      </div>
+      <div class="step-card active">
+        <span class="step-tag">Step 2</span>
+        <div class="step-visual"></div>
+        <h3>Unlock capital</h3>
+        <p>Funded up to $400k.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-tag">Step 3</span>
+        <div class="step-visual"></div>
+        <h3>Trade & get paid</h3>
+        <p>100% of the profits.</p>
+      </div>
+    </div>
+    <div class="center-cta">
+      <a href="#pricing" class="btn btn-primary">Get Funded</a>
+      <a href="#" class="btn btn-outline">Learn More</a>
+      <p style="margin-top:16px;color:var(--slate);font-size:0.85rem;">From $14 for a $5k account</p>
+    </div>
+  </div>
+</section>
 
-.offer-banner {
-  margin: 48px auto 0; max-width: 900px; border-radius: 18px; overflow: hidden;
-  background: linear-gradient(120deg, #123B6E, #1C7FF2 60%, #2E8BF5);
-  color: #fff; padding: 26px 34px; display: flex; justify-content: space-between; align-items: center;
-  flex-wrap: wrap; gap: 16px; text-align: left;
-}
-.offer-banner .big { font-size: 1.5rem; font-weight: 800; font-family: 'Plus Jakarta Sans', sans-serif; }
-.offer-banner .code-tag {
-  background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.4);
-  padding: 10px 18px; border-radius: 10px; font-weight: 700; font-size: 0.9rem;
-}
+<section>
+  <div class="wrap">
+    <div class="blue-band">
+      <div class="section-head">
+        <h2>Trade safely with us</h2>
+      </div>
+      <div class="band-grid">
+        <div class="band-card">
+          <h3>Your skill, our risk</h3>
+          <p>Trade with our capital without being liable for any losses.</p>
+          <div class="dash-mock">
+            <div class="rowline"><span>Total rewards</span><strong>$23,899.50</strong></div>
+            <div class="rowline"><span>Today's profit</span><strong>$10,211.23</strong></div>
+            <div class="rowline"><span>Balance</span><strong>$223,899.50</strong></div>
+          </div>
+          <div class="support-photo"></div>
+        </div>
+        <div class="band-card">
+          <h3>Fast & reliable rewards</h3>
+          <p>Receive rewards with a high profit split, protected by our reward guarantee.</p>
+          <div class="reward-tile">
+            <div class="figure">$120,590</div>
+            <div class="who">Profit share · Sunil, United Kingdom</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-/* ===== Three-card trust row ===== */
-.trust-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
-.trust-card { border-radius: var(--radius-lg); padding: 30px; min-height: 220px; }
-.trust-card.cream { background: var(--cream); }
-.trust-card.pale { background: var(--pale); }
-.trust-card.blue { background: linear-gradient(135deg, #1C7FF2, #0D5FD1); color: #fff; }
-.trust-card h3 { font-size: 1.2rem; }
-.trust-card p.sub { color: var(--slate); margin-top: 4px; font-size: 0.92rem; }
-.trust-card.blue p.sub { color: rgba(255,255,255,0.8); }
-.platform-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 20px; }
-.platform-grid img { width: 44px; height: 44px; }
-.payout-mock {
-  margin-top: 18px; background: #fff; border-radius: 14px; padding: 16px;
-  display: flex; justify-content: space-between; align-items: center; box-shadow: 0 8px 24px rgba(15,23,42,0.06);
-}
-.payout-mock .lbl { font-size: 0.78rem; color: var(--slate); }
-.payout-mock .amt { font-size: 1.15rem; font-weight: 700; }
-.support-orbit { margin-top: 24px; height: 90px; position: relative; }
-.support-orbit .ring { position: absolute; border: 1px solid rgba(255,255,255,0.3); border-radius: 50%; }
-.support-orbit .ring.r1 { width: 90px; height: 90px; left: 50%; top: 0; transform: translateX(-50%); }
-.support-orbit .ring.r2 { width: 140px; height: 140px; left: 50%; top: -25px; transform: translateX(-50%); }
+<section id="rewards">
+  <div class="wrap">
+    <div class="blue-band" style="background:linear-gradient(160deg,#123B6E,#1560D6);">
+      <div class="section-head">
+        <div class="eyebrow-pill" style="background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.25);color:#fff;">💳 Rewards Guarantee</div>
+        <h2>Get paid in 24 hours or we pay you an extra $1,000</h2>
+      </div>
+      <div class="cert-strip">
+        <div class="cert-card"><div class="tag">LIFETIME PAYOUT</div><div class="amt">$120,590</div><div class="who">Sunil · UK</div></div>
+        <div class="cert-card"><div class="tag">LIFETIME PAYOUT</div><div class="amt">$78,661</div><div class="who">Neoh · Malaysia</div></div>
+        <div class="cert-card"><div class="tag">PAYOUT</div><div class="amt">$65,377</div><div class="who">Andrei · Romania</div></div>
+        <div class="cert-card"><div class="tag">PAYOUT</div><div class="amt">$39,273</div><div class="who">Brandon · USA</div></div>
+        <div class="cert-card"><div class="tag">PAYOUT</div><div class="amt">$19,812</div><div class="who">Jean · France</div></div>
+        <div class="cert-card"><div class="tag">PAYOUT</div><div class="amt">$11,383</div><div class="who">Uduak · Canada</div></div>
+      </div>
+      <div class="center-cta">
+        <a href="#pricing" class="btn btn-white">Get Funded</a>
+        <a href="#" class="btn btn-ghost-dark">More Rewards</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-.center-cta { text-align: center; margin-top: 44px; }
+<section>
+  <div class="wrap">
+    <div class="face-strip">
+      <div class="face" style="background:#1C7FF2;">AK</div>
+      <div class="face" style="background:#F5952B;">RL</div>
+      <div class="face" style="background:#0F172A;">DM</div>
+      <div class="face" style="background:#2E8BF5;">HS</div>
+      <div class="face" style="background:#F2762B;">JT</div>
+    </div>
+    <div class="section-head">
+      <h2>Why Traders Love Tidewater</h2>
+    </div>
+    <div class="center-cta" style="margin-bottom:10px;">
+      <a href="#pricing" class="btn btn-primary">Get Funded</a>
+      <a href="#" class="btn btn-outline">Learn More</a>
+      <p style="margin-top:16px;color:var(--slate);font-size:0.85rem;">$283 for a $100k account</p>
+    </div>
+    <div class="feature-cards">
+      <div class="feature-card">
+        <h3><span class="icon-badge">💳</span>Reward guarantee</h3>
+        <p>Get paid in 24 hours or we pay you an extra $1,000.</p>
+        <div class="visual"></div>
+      </div>
+      <div class="feature-card">
+        <h3><span class="icon-badge">📈</span>100% refundable fees</h3>
+        <p>Your evaluation fee comes back on your first payout.</p>
+        <div class="visual"></div>
+      </div>
+      <div class="feature-card blue">
+        <h3><span class="icon-badge" style="background:rgba(255,255,255,0.2);color:#fff;">💠</span>100% profit split available</h3>
+        <p>Standard profit split is 90% — upgrade any time.</p>
+        <div class="visual"></div>
+      </div>
+      <div class="feature-card">
+        <h3><span class="icon-badge">📅</span>First reward on demand</h3>
+        <p>Fast bi-weekly rewards, or request payout as you go.</p>
+        <div class="visual"></div>
+      </div>
+      <div class="feature-card">
+        <h3><span class="icon-badge">🎯</span>Easy 2–10% profit targets</h3>
+        <p>Realistic objectives that don't punish good trading.</p>
+        <div class="visual"></div>
+      </div>
+      <div class="feature-card blue">
+        <h3><span class="icon-badge" style="background:rgba(255,255,255,0.2);color:#fff;">📊</span>Up to $2M in scaled capital</h3>
+        <p>Consistent traders scale automatically over time.</p>
+        <div class="visual"></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-/* ===== Pricing calculator ===== */
-.calc-shell {
-  background: var(--pale); border-radius: 28px; padding: 44px;
-}
-.calc-shell .section-head { margin-bottom: 30px; }
-.toggle-pill {
-  display: inline-flex; background: #fff; border-radius: 999px; padding: 5px; border: 1px solid var(--line);
-  margin: 0 auto 30px; display: flex; justify-content: center; width: fit-content;
-}
-.toggle-pill button {
-  border: none; background: none; padding: 10px 26px; border-radius: 999px; font-weight: 600; cursor: pointer; color: var(--slate);
-}
-.toggle-pill button.active { background: var(--blue); color: #fff; }
+<section>
+  <div class="wrap">
+    <div class="showcase">
+      <div>
+        <h2>Dive into Tidewater trading</h2>
+        <ul>
+          <li>✔ Spreads starting from 0.0</li>
+          <li>✔ True market pricing and execution</li>
+          <li>✔ Lowest spreads in the industry</li>
+        </ul>
+        <p style="font-weight:600;margin-bottom:16px;">Most popular trading platforms available</p>
+        <div class="platform-row">
+          <div class="p-tile"><img src="images/icon-platform-1.svg" alt="" width="40">Chart Trade</div>
+          <div class="p-tile"><img src="images/icon-platform-2.svg" alt="" width="40">TradeDesk</div>
+          <div class="p-tile"><img src="images/icon-platform-3.svg" alt="" width="40">MetaTrade 5</div>
+          <div class="p-tile"><img src="images/icon-platform-4.svg" alt="" width="40">cTrader</div>
+        </div>
+      </div>
+      <div class="showcase-mock">
+        <div class="dash-mock">
+          <div class="rowline"><span>Account balance</span><strong>$224,190.25</strong></div>
+          <div class="rowline"><span>Account size</span><strong>$200,000.00</strong></div>
+          <div class="rowline"><span>Total rewards</span><strong>$24,342.10</strong></div>
+          <div class="rowline"><span>Status</span><strong style="color:#16A34A;">Funded</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-.limited-bar {
-  background: linear-gradient(120deg, #F5952B, #F2762B);
-  color: #fff; border-radius: 16px; padding: 16px 24px;
-  display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 14px;
-}
-.limited-bar .left { display: flex; gap: 18px; align-items: center; font-weight: 600; font-size: 0.92rem; flex-wrap: wrap; }
-.limited-bar .code {
-  background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.5);
-  padding: 9px 16px; border-radius: 8px; font-weight: 700; font-size: 0.85rem;
-}
+<section class="support-section">
+  <div class="wrap">
+    <div class="orbit-icons">
+      <div class="oi">💬</div><div class="oi">✉️</div><div class="oi">🅵</div><div class="oi">🅧</div><div class="oi">▶</div>
+    </div>
+    <div class="section-head">
+      <h2>Fast & Professional Support</h2>
+      <p>We're always here to help. Check our FAQ for quick answers, or reach out to our team via social media, Discord, website chat, or email.</p>
+    </div>
+    <div class="center-cta">
+      <a href="#faq" class="btn btn-outline">FAQ</a>
+      <a href="#" class="btn btn-primary">Contact</a>
+    </div>
+  </div>
+</section>
 
-.calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-.calc-panel { background: #fff; border-radius: var(--radius-md); padding: 26px; }
-.calc-panel h4 { font-size: 0.95rem; margin-bottom: 16px; }
-.pill-select { display: flex; gap: 10px; flex-wrap: wrap; }
-.pill-select button {
-  border: 1px solid var(--line); background: #fff; padding: 12px 18px; border-radius: 12px;
-  font-weight: 600; font-size: 0.88rem; cursor: pointer; color: var(--ink);
-}
-.pill-select button.active { background: var(--blue); border-color: var(--blue); color: #fff; }
-.chip-select { display: flex; gap: 10px; flex-wrap: wrap; }
-.chip-select button {
-  border: 1px solid var(--line); background: #fff; padding: 10px 16px; border-radius: 10px;
-  font-weight: 600; font-size: 0.85rem; cursor: pointer; color: var(--ink); position: relative;
-}
-.chip-select button.active { background: var(--blue-pale); border-color: var(--blue); color: var(--blue-dark); }
+<section id="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow-pill">Rated 9.4/10 · From 5k+ verified reviews</div>
+      <h2>What traders say about Tidewater</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card highlight">Join 300,000+<br>Aqua-style traders worldwide</div>
+      <div class="testi-card">
+        <div class="testi-head"><div class="testi-who"><span class="av">RK</span>Ravi K. 🇮🇳</div><span class="stars">★★★★★</span></div>
+        <p class="quote">No hidden rules, no odd lot restrictions. <strong>Rewards are fast and support responds quickly.</strong></p>
+      </div>
+      <div class="testi-card">
+        <div class="testi-head"><div class="testi-who"><span class="av">HW</span>Hans W. 🇩🇪</div><span class="stars">★★★★★</span></div>
+        <p class="quote">Straightforward rules, quick support. <strong>Had no problems getting my reward.</strong> On my second one now.</p>
+      </div>
+      <div class="testi-card">
+        <div class="testi-head"><div class="testi-who"><span class="av">PL</span>Pierre L. 🇫🇷</div><span class="stars">★★★★★</span></div>
+        <p class="quote">Completed both evaluations without issue. <strong>The reward was fast, no back and forth.</strong></p>
+      </div>
+      <div class="testi-card">
+        <div class="testi-head"><div class="testi-who"><span class="av">JR</span>James R. 🇬🇧</div><span class="stars">★★★★★</span></div>
+        <p class="quote">Just received my first reward of over $13k. <strong>Rules are fair and easy to follow.</strong></p>
+      </div>
+      <div class="testi-card">
+        <div class="testi-head"><div class="testi-who"><span class="av">ET</span>Emily T. 🇦🇺</div><span class="stars">★★★★★</span></div>
+        <p class="quote">The 90% split is generous and <strong>execution is fast and reliable.</strong> Very satisfied so far.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-.rules-table { margin-top: 20px; border-top: 1px solid var(--line); }
-.rules-table .row {
-  display: flex; justify-content: space-between; padding: 13px 0; border-bottom: 1px solid var(--line);
-  font-size: 0.88rem; color: var(--slate);
-}
-.rules-table .row strong { color: var(--ink); font-weight: 700; }
+<section>
+  <div class="wrap">
+    <div class="cta-duo">
+      <div class="cta-card cream">
+        <h2>Dive into the Tidewater Community</h2>
+        <p>Sign up to enter our yearly $1.2M giveaway, plus exclusive discounts and promotions.</p>
+        <form class="email-form" onsubmit="return false;">
+          <input type="email" placeholder="Enter your email" required>
+          <button class="btn btn-primary" type="submit">Join now & enter the giveaway</button>
+        </form>
+      </div>
+      <div class="cta-card blue">
+        <p style="opacity:0.85;margin-bottom:6px;">Your journey starts here</p>
+        <h2>Make waves in trading</h2>
+        <a href="https://discord.com" class="btn btn-white">Join our Discord community</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-.output-panel { background: var(--blue); border-radius: var(--radius-md); padding: 26px; color: #fff; }
-.output-panel h4 { color: #fff; font-size: 0.95rem; margin-bottom: 6px; }
-.output-panel p.help { color: rgba(255,255,255,0.75); font-size: 0.82rem; margin-bottom: 16px; }
-.size-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 18px; }
-.size-grid button {
-  border: 1px solid rgba(255,255,255,0.35); background: rgba(255,255,255,0.08); color: #fff;
-  padding: 12px 6px; border-radius: 10px; font-weight: 700; font-size: 0.85rem; cursor: pointer;
-}
-.size-grid button.active { background: #fff; color: var(--blue-dark); }
-.price-row { display: flex; justify-content: space-between; align-items: baseline; margin: 20px 0 6px; }
-.price-row .now { font-size: 2rem; font-weight: 800; font-family: 'Plus Jakarta Sans', sans-serif; }
-.price-row .was { text-decoration: line-through; color: rgba(255,255,255,0.6); margin-left: 8px; font-size: 1rem; }
-.price-tag { font-size: 0.82rem; color: rgba(255,255,255,0.75); margin-bottom: 18px; }
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head left">
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-list" style="border-top:1px solid var(--line);">
+      <div class="faq-item open" style="border-bottom:1px solid var(--line);">
+        <button class="faq-q" style="width:100%;text-align:left;background:none;border:none;padding:22px 0;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:1.02rem;display:flex;justify-content:space-between;cursor:pointer;">What is a prop trading firm?<span>+</span></button>
+        <div class="faq-a" style="color:var(--slate);padding-bottom:20px;">A firm that gives traders access to its own capital after they demonstrate consistent, risk-managed trading on an evaluation account.</div>
+      </div>
+      <div class="faq-item" style="border-bottom:1px solid var(--line);">
+        <button class="faq-q" style="width:100%;text-align:left;background:none;border:none;padding:22px 0;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:1.02rem;display:flex;justify-content:space-between;cursor:pointer;">Do I need experience to join?<span>+</span></button>
+        <div class="faq-a" style="display:none;color:var(--slate);padding-bottom:20px;">No formal experience is required — anyone who can meet the evaluation criteria is eligible.</div>
+      </div>
+      <div class="faq-item" style="border-bottom:1px solid var(--line);">
+        <button class="faq-q" style="width:100%;text-align:left;background:none;border:none;padding:22px 0;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:1.02rem;display:flex;justify-content:space-between;cursor:pointer;">How fast are payouts?<span>+</span></button>
+        <div class="faq-a" style="display:none;color:var(--slate);padding-bottom:20px;">Most requests are reviewed and paid within 24 hours.</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-/* ===== Press strip ===== */
-.press-strip { display: flex; justify-content: center; gap: 56px; flex-wrap: wrap; align-items: center; opacity: 0.75; }
-.press-strip span { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.1rem; color: var(--slate); }
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand-block">
+        <a href="#" class="brand">Tidewater</a>
+        <div class="socials">
+          <a href="#">💬</a><a href="#">📷</a><a href="#">𝕏</a><a href="#">▶</a><a href="#">✈️</a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Trade</h4><a href="#">CFDs</a><a href="#">Futures</a></div>
+        <div class="footer-col"><h4>Product</h4><a href="#">Home</a><a href="#how-it-works">How it works</a><a href="#rewards">Rewards</a><a href="#">Affiliate</a></div>
+        <div class="footer-col"><h4>About</h4><a href="#">About</a><a href="#">Blog</a><a href="#">Guides</a></div>
+        <div class="footer-col"><h4>Support</h4><a href="#faq">FAQ</a><a href="#">Contact</a></div>
+      </div>
+    </div>
 
-/* ===== Stat cards ===== */
-.stat-cards { display: grid; grid-template-columns: 1.1fr 1fr; gap: 20px; margin-top: 40px; }
-.stat-cards .stack { display: grid; gap: 20px; }
-.stat-card {
-  border-radius: var(--radius-lg); padding: 30px; min-height: 200px; display: flex; flex-direction: column; justify-content: space-between;
-}
-.stat-card.blue { background: linear-gradient(160deg, #1C7FF2, #0D5FD1); color: #fff; }
-.stat-card.light { background: var(--pale); }
-.stat-card .label { font-size: 0.9rem; color: var(--slate); font-weight: 600; }
-.stat-card.blue .label { color: rgba(255,255,255,0.85); }
-.stat-card .figure { font-size: 2.2rem; font-weight: 800; font-family: 'Plus Jakarta Sans', sans-serif; margin-top: 6px; }
-.mini-bars { display: flex; align-items: flex-end; gap: 8px; height: 70px; margin-top: 16px; }
-.mini-bars span { flex: 1; background: rgba(255,255,255,0.5); border-radius: 6px 6px 0 0; }
-.mini-bars span:nth-child(1) { height: 40%; } .mini-bars span:nth-child(2) { height: 100%; background:#fff;} .mini-bars span:nth-child(3) { height: 55%; }
+    <div class="owned-by">
+      <div class="wordmark">Owned by Tidewater Group</div>
+      <p>Learn more about B2B collaboration & career opportunities.</p>
+      <a href="#" class="btn btn-white" style="align-self:flex-start;">Visit Tidewater Group</a>
+    </div>
 
-/* ===== Steps ===== */
-.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-.step-card { border-radius: var(--radius-lg); padding: 28px; background: var(--pale); }
-.step-card.active { background: linear-gradient(160deg, #1C7FF2, #0D5FD1); color: #fff; }
-.step-tag {
-  display: inline-block; border: 1px solid var(--blue); color: var(--blue); font-weight: 700; font-size: 0.82rem;
-  padding: 6px 14px; border-radius: 999px; margin-bottom: 18px;
-}
-.step-card.active .step-tag { border-color: rgba(255,255,255,0.6); color: #fff; }
-.step-visual { background: #fff; border-radius: 14px; height: 110px; margin-bottom: 22px; }
-.step-card.active .step-visual { background: rgba(255,255,255,0.12); }
-.step-card h3 { font-size: 1.25rem; margin-bottom: 6px; }
-.step-card p { color: var(--slate); font-size: 0.92rem; }
-.step-card.active p { color: rgba(255,255,255,0.85); }
+    <div class="pay-badges">
+      <span>VISA</span><span>MASTERCARD</span><span>AMEX</span><span>APPLE PAY</span><span>BTC</span><span>ETH</span>
+    </div>
 
-/* ===== Trade safely (blue band) ===== */
-.blue-band { background: linear-gradient(160deg, #1C7FF2, #0B57C4); color: #fff; border-radius: 32px; padding: 60px; }
-.blue-band .section-head h2, .blue-band .section-head p { color: #fff; }
-.blue-band .section-head p { color: rgba(255,255,255,0.8); }
-.band-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-.band-card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); border-radius: var(--radius-lg); padding: 30px; }
-.band-card h3 { color: #fff; font-size: 1.15rem; margin-bottom: 8px; }
-.band-card p { color: rgba(255,255,255,0.8); font-size: 0.92rem; margin-bottom: 20px; }
-.dash-mock { background: #fff; border-radius: 14px; padding: 14px; color: var(--ink); }
-.dash-mock .rowline { display: flex; justify-content: space-between; font-size: 0.8rem; padding: 6px 0; }
-.support-photo { background: linear-gradient(135deg,#F5952B,#F2762B); border-radius: 14px; height: 110px; margin-top: 16px; }
-.reward-tile { background: rgba(255,255,255,0.1); border-radius: 14px; padding: 20px; margin-top: 16px; }
-.reward-tile .figure { font-size: 1.8rem; font-weight: 800; font-family: 'Plus Jakarta Sans', sans-serif; }
-.reward-tile .who { font-size: 0.82rem; color: rgba(255,255,255,0.8); margin-top: 6px; }
+    <div class="footer-legal">
+      All content published by Tidewater is for general information purposes only and is not investment advice, an offer, or a solicitation to buy or sell any security. Tidewater is not a financial broker or advisor and does not accept client deposits; its exclusive activity is simulated trading. Trading foreign exchange and CFDs on margin carries a high level of risk and may not be suitable for all traders — you may sustain a total loss of your funds. Past performance is not indicative of future results. Always consult an independent financial professional before making any decisions. This page is a demonstration layout and is not affiliated with any real financial services provider.
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Tidewater. All rights reserved.</span>
+      <div class="links"><a href="#">Refund Policy</a><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+    </div>
+  </div>
+</footer>
 
-/* ===== Certificate strip ===== */
-.cert-strip { display: flex; gap: 16px; overflow-x: auto; padding-bottom: 6px; margin-top: 30px; }
-.cert-card {
-  min-width: 150px; background: linear-gradient(160deg,#123B6E,#1C7FF2); border-radius: 14px; padding: 16px;
-  color: #fff; text-align: center; flex-shrink: 0;
-}
-.cert-card .tag { font-size: 0.62rem; letter-spacing: 0.05em; opacity: 0.75; }
-.cert-card .amt { font-size: 1.15rem; font-weight: 800; margin-top: 10px; }
-.cert-card .who { font-size: 0.8rem; opacity: 0.85; margin-top: 4px; }
-
-/* ===== Feature photo grid (why traders love) ===== */
-.face-strip { display: flex; justify-content: center; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
-.face-strip .face {
-  width: 74px; height: 74px; border-radius: 14px;
-  display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-family: 'Plus Jakarta Sans', sans-serif;
-}
-.feature-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 44px; }
-.feature-card { background: var(--pale); border-radius: var(--radius-lg); padding: 26px; }
-.feature-card h3 { font-size: 1.05rem; display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
-.feature-card p { color: var(--slate); font-size: 0.9rem; }
-.feature-card .visual { margin-top: 18px; height: 100px; background: #fff; border-radius: 12px; }
-.feature-card.blue { background: linear-gradient(160deg, #1C7FF2, #0D5FD1); color: #fff; }
-.feature-card.blue h3, .feature-card.blue p { color: #fff; }
-.feature-card.blue .visual { background: rgba(255,255,255,0.1); }
-.icon-badge {
-  width: 34px; height: 34px; border-radius: 9px; background: var(--blue-pale); color: var(--blue);
-  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
-}
-
-/* ===== Platform showcase ===== */
-.showcase { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; background: var(--pale); border-radius: 28px; padding: 50px; }
-.showcase ul { list-style: none; padding: 0; margin: 20px 0 30px; }
-.showcase li { display: flex; align-items: center; gap: 10px; padding: 8px 0; font-size: 0.95rem; }
-.showcase .platform-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
-.showcase .platform-row .p-tile { text-align: center; font-size: 0.8rem; color: var(--slate); font-weight: 600; }
-.showcase .platform-row img { margin: 0 auto 8px; }
-.showcase-mock { background: #fff; border-radius: 20px; padding: 20px; box-shadow: 0 20px 50px rgba(15,23,42,0.08); }
-
-/* ===== Support orbit section ===== */
-.support-section { text-align: center; }
-.orbit-icons { display: flex; justify-content: center; gap: 26px; margin-bottom: 30px; flex-wrap: wrap; }
-.orbit-icons .oi {
-  width: 54px; height: 54px; border-radius: 50%; background: var(--pale); border: 1px solid var(--line);
-  display: flex; align-items: center; justify-content: center; font-size: 1.2rem;
-}
-
-/* ===== Testimonials ===== */
-.testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
-.testi-card { border: 1px solid var(--line); border-radius: var(--radius-md); padding: 24px; background: #fff; }
-.testi-card.highlight { background: linear-gradient(160deg,#1C7FF2,#0D5FD1); color: #fff; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; font-weight: 700; font-size: 1.15rem; }
-.testi-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
-.testi-who { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 0.92rem; }
-.testi-who .av { width: 30px; height: 30px; border-radius: 50%; background: var(--blue-pale); display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:700;color:var(--blue-dark); }
-.stars { color: var(--blue); font-size: 0.8rem; }
-.testi-card p.quote { font-size: 0.88rem; color: var(--slate); }
-.testi-card p.quote strong { color: var(--ink); }
-
-/* ===== CTA email + discord ===== */
-.cta-duo { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-.cta-card { border-radius: var(--radius-lg); padding: 44px; min-height: 280px; display: flex; flex-direction: column; justify-content: center; }
-.cta-card.cream { background: var(--cream); }
-.cta-card.blue { background: linear-gradient(160deg,#1C7FF2,#0B57C4); color: #fff; text-align: center; align-items: center; }
-.cta-card h2 { font-size: 1.7rem; margin-bottom: 12px; }
-.cta-card p { color: var(--slate); margin-bottom: 22px; }
-.cta-card.blue p { color: rgba(255,255,255,0.85); }
-.email-form { display: flex; flex-direction: column; gap: 12px; }
-.email-form input {
-  border: 1px solid var(--line); background: #fff; border-radius: 12px; padding: 14px 16px; font-size: 0.95rem; font-family: inherit;
-}
-
-/* ===== Footer ===== */
-footer { background: var(--navy); color: #fff; padding: 64px 0 0; margin-top: 40px; }
-.footer-top { display: flex; justify-content: space-between; gap: 40px; flex-wrap: wrap; padding-bottom: 40px; }
-.footer-brand-block .brand { color: #fff; font-size: 1.6rem; }
-.footer-brand-block .socials { display: flex; gap: 10px; margin-top: 20px; }
-.footer-brand-block .socials a {
-  width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.08);
-  display: flex; align-items: center; justify-content: center; font-size: 1.1rem;
-}
-.footer-cols { display: flex; gap: 60px; flex-wrap: wrap; }
-.footer-col h4 { font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-bottom: 16px; font-weight: 600; }
-.footer-col a { display: block; color: #fff; font-size: 0.92rem; padding: 6px 0; opacity: 0.9; }
-.owned-by {
-  border: 1px solid rgba(255,255,255,0.18); border-radius: 18px; padding: 26px; max-width: 420px;
-  display: flex; flex-direction: column; gap: 14px; margin-bottom: 40px;
-}
-.owned-by .wordmark { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.2rem; }
-.owned-by p { color: rgba(255,255,255,0.7); font-size: 0.88rem; margin: 0; }
-.pay-badges { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 40px; }
-.pay-badges span {
-  border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; padding: 8px 14px; font-size: 0.75rem; font-weight: 700; color: rgba(255,255,255,0.85);
-}
-.footer-legal { border-top: 1px solid rgba(255,255,255,0.1); padding: 28px 0; color: rgba(255,255,255,0.55); font-size: 0.78rem; line-height: 1.7; }
-.footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.1); padding: 22px 0 40px; display: flex; justify-content: space-between;
-  color: rgba(255,255,255,0.6); font-size: 0.82rem; flex-wrap: wrap; gap: 12px;
-}
-.footer-bottom .links { display: flex; gap: 20px; }
-
-/* ===== Responsive ===== */
-@media (max-width: 980px) {
-  .main-nav { display: none; }
-  .trust-row, .calc-grid, .band-grid, .steps, .feature-cards, .testi-grid, .cta-duo, .stat-cards, .showcase { grid-template-columns: 1fr; }
-  .blue-band { padding: 36px; }
-  .calc-shell { padding: 26px; }
-  section { padding: 60px 0; }
-  .footer-top { flex-direction: column; }
-}
-@media (max-width: 560px) {
-  .wrap { padding: 0 20px; }
-  .header-actions .btn-login { display: none; }
-  .offer-banner { flex-direction: column; align-items: flex-start; }
-  .size-grid { grid-template-columns: repeat(2, 1fr); }
-}
+<script src="script.js"></script>
+</body>
+</html>
