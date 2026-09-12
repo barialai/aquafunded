@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Makani On The Beach</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom Config for Hatton Font -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            hatton: ['Hatton', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Hatton', serif;
+    }
+  </style>
+     <link rel="icon" type="image/png" href="images/makani.jpg">
+</head>
+<body class="bg-[#f3e5dc] text-black font-['Hatton']">
+
+<!-- Hero Section -->
+<section class="relative h-screen overflow-hidden">
+  <img src="images/Hero.webp" alt="Makani by the Beach" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center text-white px-4 sm:px-6">
+        <img src="images/Makani Carousel.png" alt="Janot Logo" class="mx-auto w-60 md:w-80">
+    <a href="https://wa.me/918691851907" target="_blank" class="bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold hover:bg-gray-200 transition">Book Now</a>
+  </div>
+</section>
+
+
+<!-- About Section -->
+<section class="py-16 px-4 sm:px-6 md:px-16 flex flex-col md:flex-row items-center gap-10">
+  <img src="images/about.webp" alt="Makani by the Beach" class="w-full md:w-1/2 rounded-xl shadow-lg">
+  <div class="md:w-1/2">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-4">Welcome to Makani</h2>
+    <p class="text-base sm:text-lg leading-relaxed">
+      On the coastal belt of Anjuna, Makani On The Beach is your luxury dining paradise by the sea. ‘Makani’ means strong winds, the refreshing Goa breeze that welcomes you to our cozy coastal restaurant. Here, you can indulge in world cuisines, crafted by expert chefs in Goa, sip on exquisite cocktails, and dine by the beach under lanterns and stars. A perfect blend of romance, relaxation, and fine dining in Goa.
+    </p>
+  </div>
+</section>
+
+<!-- Seating Options -->
+<section class="py-16 px-4 sm:px-6 md:px-16 text-center">
+  <h2 class="text-3xl sm:text-4xl font-bold mb-4">Seating Options</h2>
+  <p class="mb-10 text-base sm:text-lg max-w-2xl mx-auto">Choose your vibe whether it's an intimate date, chill with friends, or a breezy meal under the pergola.</p>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <div>
+      <img src="images/couples .webp" alt="Couples Seating" class="w-full rounded-lg shadow-md mb-4">
+      <h3 class="text-lg sm:text-xl font-semibold">Couples Seating</h3>
+    </div>
+    <div>
+      <img src="images/pergola.webp" alt="Pergola Seating" class="w-full rounded-lg shadow-md mb-4">
+      <h3 class="text-lg sm:text-xl font-semibold">Pergola</h3>
+    </div>
+    <div>
+      <img src="images/indoor.webp" alt="Indoor Seating" class="w-full rounded-lg shadow-md mb-4">
+      <h3 class="text-lg sm:text-xl font-semibold">Indoor Seating</h3>
+    </div>
+  </div>
+</section>
+
+<!-- Food Highlights -->
+<section class="py-16 px-4 sm:px-6 md:px-16 text-center">
+  <h2 class="text-3xl sm:text-4xl font-bold mb-4">Menu</h2>
+  <p class="mb-10 text-base sm:text-lg max-w-2xl mx-auto">A train of global cuisines from authentic, fresh, and unforgettable. Taste the breeze in every bite.</p>
+  <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+    <img src="images/food 1.webp" alt="Dish 1" class="w-full rounded-lg shadow-md">
+    <img src="images/food 2.webp" alt="Dish 2" class="w-full rounded-lg shadow-md">
+    <img src="images/food 3.webp" alt="Dish 3" class="w-full rounded-lg shadow-md">
+    <img src="images/food 4.webp" alt="Dish 4" class="w-full rounded-lg shadow-md">
+  </div>
+</section>
+
+<!-- Ambience -->
+<section class="relative bg-cover bg-center h-[400px] sm:h-[500px]" style="background-image: url('YOUR-AMBIENCE-IMAGE.jpg');">
+  <img src="images/exceptional.webp" alt="Makani by the Beach" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-center text-white px-4">
+    <div class="flex flex-col items-center">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">Exceptional by Day, Magical by Night</h2>
+      <a href="https://wa.me/918691851907" target="_blank" class="bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold hover:bg-gray-200 transition">Book Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section class="py-16 px-4 sm:px-6 md:px-16 text-center">
+  <h2 class="text-3xl sm:text-4xl font-bold mb-10">Gallery</h2>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <img src="images/gallery1.webp" alt="Gallery 1" class="mx-auto h-80 w-full rounded-lg shadow-md object-cover">
+    <img src="images/Gallery2.webp" alt="Gallery 2" class="mx-auto h-80 w-full rounded-lg shadow-md object-cover">
+    <img src="images/gallery3.webp" alt="Gallery 3" class="mx-auto h-80 w-full rounded-lg shadow-md object-cover">
+    <img src="images/gallery4.webp" alt="Gallery 4" class="mx-auto h-80 w-full rounded-lg shadow-md object-cover">
+  </div>
+</section>
+
+<!-- Reservation -->
+<section id="reservation" class="relative bg-cover bg-center bg-no-repeat py-20 px-4 sm:px-6 md:px-16 text-center text-white" style="background-image: url('images/images.webp');">
+  <div class="absolute inset-0 bg-black/60"></div>
+  <div class="relative z-10 max-w-3xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-4">Make a Reservation</h2>
+    <p class="mb-8 text-base sm:text-lg">Make memories with friends, family, and loved ones at Makani On The Beach. Reserve your table now and dine by the ocean breeze.</p>
+    <a href="https://wa.me/918691851907" target="_blank" class="bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold hover:bg-gray-200 transition">Book Now</a>
+  </div>
+</section>
+
+<!-- Find Us -->
+<section class="py-16 px-4 sm:px-6 md:px-16 text-center">
+  <h2 class="text-3xl sm:text-4xl font-bold mb-4">Find Us</h2>
+  <p class="mb-4 text-base sm:text-lg">Anjuna Beach, Goa, India</p>
+  <p class="mb-4 text-base sm:text-lg">📞 +91 9049493985</p>
+  <a href="https://maps.app.goo.gl/Gc5CCFxkZwxejtSQ7" target="_blank" class="inline-block mt-4 text-base sm:text-lg font-semibold text-white bg-black px-6 py-3 rounded-full hover:bg-blue-600 transition">
+    📍 View on Google Maps
+  </a>
+</section>
+
+<!-- Footer -->
+<footer class="py-8 px-4 text-center bg-[#66d1c0] text-white">
+  <p class="mb-4">&copy; 2025 Makani On The Beach</p>
+  <div class="flex justify-center gap-6 flex-wrap">
+    <a href="https://www.instagram.com/makanigoa/" class="hover:text-blue-500">Instagram</a>
+    <a href="https://www.facebook.com/makanigoa/" class="hover:text-blue-500">Facebook</a>
+    <a href="images/website_tnc.pdf" target="_blank" class="hover:text-blue-500">T&C</a>
+    <a href="images/RefundPolicy.pdf" target="_blank" class="hover:text-blue-500">Refund Policy</a>
+  </div>
+</footer>
+
+</body>
+</html>
