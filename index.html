@@ -1,297 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tidewater | Funded Trading Capital, Kept Simple</title>
-<meta name="description" content="Trade with Tidewater's capital. Pass one evaluation, get funded up to $400k, and keep up to 100% of what you earn.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A professional funded trading landing page with account selection, pricing, reviews, benefits, and platform details." />
+  <title>AquaFunded - Professional Funded Trading Website</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+  <div class="page-shell">
+    <div class="offer-bar">
+      <div class="container offer-bar__inner">
+        <p><strong>Limited campaign:</strong> save on your first account and unlock fast reward access.</p>
+        <button class="copy-code" type="button" data-copy-value="AQUA25" aria-label="Copy promo code">
+          <span>Code AQUA25</span>
+          <small>Copy</small>
+        </button>
+      </div>
+    </div>
 
-<header class="site-header">
-  <div class="wrap">
-    <a href="#" class="brand">
-      <img src="images/logo-mark.svg" alt="">
-      Tidewater
-    </a>
-    <nav class="main-nav">
-      <a href="#how-it-works">How it works</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#faq">FAQ</a>
-    </nav>
-    <div class="header-actions">
-      <a href="#" class="btn btn-ghost">Log in</a>
-      <a href="#pricing" class="btn btn-primary">Get funded</a>
-    </div>
-  </div>
-</header>
+    <header class="site-header" data-header>
+      <div class="container nav">
+        <a class="brand" href="#top" aria-label="AquaFunded home">
+          <img src="assets/images/logo.svg" alt="" class="brand__mark" />
+          <span>AquaFunded</span>
+        </a>
 
-<section class="hero">
-  <div class="hero-bg" aria-hidden="true">
-    <img src="images/wave-hero.svg" alt="" style="width:100%;height:100%;object-fit:cover;">
-  </div>
-  <div class="wrap">
-    <div class="hero-copy">
-      <div class="hero-eyebrow"><span class="dot"></span> Over 40,000 funded traders</div>
-      <h1>Trade our capital. Keep what you earn.</h1>
-      <p class="lede">Pass a single evaluation and get a funded account of up to $400,000 — with a profit split as high as 100% and payouts on request, not on a calendar.</p>
-      <div class="hero-cta">
-        <a href="#pricing" class="btn btn-primary">Get funded</a>
-        <a href="#how-it-works" class="btn btn-ghost">See how it works</a>
-      </div>
-      <p class="hero-note">No experience required · Fees fully refundable on your first payout</p>
-    </div>
-    <div class="gauge" role="img" aria-label="Live account snapshot">
-      <div class="gauge-row">
-        <span class="label">Account size</span>
-        <span class="value">$100,000</span>
-      </div>
-      <div class="gauge-row">
-        <span class="label">Profit target reached</span>
-        <span class="value up">8.2%</span>
-      </div>
-      <div class="gauge-row">
-        <span class="label">Payout, this cycle</span>
-        <span class="value up">$4,180</span>
-      </div>
-      <div class="gauge-bar"><span></span></div>
-    </div>
-  </div>
-</section>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
 
-<div class="trustbar">
-  <div class="wrap">
-    <div class="trust-stat"><div class="num">$41M+</div><div class="lbl">Paid to traders</div></div>
-    <div class="trust-stat"><div class="num">40,000+</div><div class="lbl">Funded accounts</div></div>
-    <div class="trust-stat"><div class="num">9.3 / 10</div><div class="lbl">Trader rating, 3k+ reviews</div></div>
-    <div class="trust-stat"><div class="num">24 / 7</div><div class="lbl">Human support</div></div>
-  </div>
-</div>
+        <nav class="nav-links" id="primary-navigation" data-nav-menu>
+          <a href="#accounts">Accounts</a>
+          <a href="#rewards">Rewards</a>
+          <a href="#steps">How it works</a>
+          <a href="#platforms">Platforms</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#faq">FAQ</a>
+        </nav>
 
-<section id="how-it-works">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Three steps between you and a funded account</h2>
-      <p>No time limits, no hidden rules. Move at your own pace, or skip straight to funding.</p>
-    </div>
-    <div class="steps">
-      <div class="step">
-        <span class="num">01</span>
-        <img src="images/icon-step1.svg" alt="">
-        <h3>Take the evaluation</h3>
-        <p>Trade a demo account and hit a profit target while staying inside simple risk limits. Or skip it entirely with instant funding.</p>
-      </div>
-      <div class="step">
-        <span class="num">02</span>
-        <img src="images/icon-step2.svg" alt="">
-        <h3>Get your funded account</h3>
-        <p>Pass, and we open a live-simulated account in your name — funded from $5,000 up to $400,000, with room to scale further.</p>
-      </div>
-      <div class="step">
-        <span class="num">03</span>
-        <img src="images/icon-step3.svg" alt="">
-        <h3>Trade and get paid</h3>
-        <p>Request a payout whenever you're ready. Most traders see funds within 24 hours, with a profit split of up to 100%.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="pricing">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Work out your account</h2>
-      <p>Pick a size and a model. The fee is a one-time, fully refundable cost — not a subscription.</p>
-    </div>
-    <div class="calc">
-      <div class="calc-control">
-        <div class="model-choice" role="group" aria-label="Evaluation model">
-          <button type="button" class="active" data-model="two" data-mult="1">Two-step</button>
-          <button type="button" data-model="one" data-mult="1.35">One-step</button>
-          <button type="button" data-model="instant" data-mult="3">Instant</button>
-        </div>
-        <label for="size">Account size <span class="val" id="sizeLabel">$100,000</span></label>
-        <input type="range" id="size" min="0" max="8" step="1" value="3">
-        <label for="split">Profit split <span class="val" id="splitLabel">90%</span></label>
-        <input type="range" id="split" min="0" max="1" step="1" value="0">
-      </div>
-      <div class="calc-output">
-        <div class="line"><span>Account size</span><strong id="outSize">$100,000</strong></div>
-        <div class="line"><span>Model</span><strong id="outModel">Two-step</strong></div>
-        <div class="line"><span>Profit split</span><strong id="outSplit">90%</strong></div>
-        <div class="line"><span>First payout window</span><strong id="outPayout">14 days</strong></div>
-        <div class="fee">
-          <div class="amount" id="outFee">$549</div>
-          <div class="tag">one-time, 100% refundable on first payout</div>
-        </div>
-        <a href="#" class="btn btn-primary btn-block" style="margin-top:20px;">Start this account</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Built around the trader, not the fine print</h2>
-      <p>Every account comes with the same baseline protections — upgrades are optional, never required.</p>
-    </div>
-    <div class="features">
-      <div class="feature">
-        <h3>No time limits</h3>
-        <p>Complete your evaluation in a week or a year. The clock is yours.</p>
-      </div>
-      <div class="feature">
-        <h3>News trading allowed</h3>
-        <p>Trade through high-impact releases without extra restrictions.</p>
-      </div>
-      <div class="feature">
-        <h3>Weekend holding</h3>
-        <p>Carry positions through the weekend on eligible account types.</p>
-      </div>
-      <div class="feature">
-        <h3>Scale up to $2M</h3>
-        <p>Consistent traders scale their capital automatically over time.</p>
-      </div>
-      <div class="feature">
-        <h3>Payout on request</h3>
-        <p>Ask for a payout whenever you clear the minimum trading window.</p>
-      </div>
-      <div class="feature">
-        <h3>Real spreads, real fills</h3>
-        <p>Pricing is sourced from live liquidity providers, not simulated ticks.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="reviews">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>What traders say</h2>
-      <p>A sample of feedback from funded traders across our community.</p>
-    </div>
-    <div class="testimonials">
-      <div class="testimonial">
-        <p class="quote">"The rules are actually written in plain language. My first payout cleared in under a day, no back and forth."</p>
-        <div class="who">
-          <div class="avatar">MK</div>
-          <div><div class="name">Maren K.</div><div class="loc">Netherlands</div></div>
+        <div class="nav-actions">
+          <a href="#" class="btn btn--ghost">Login</a>
+          <a href="#accounts" class="btn btn--primary">Get Funded</a>
         </div>
       </div>
-      <div class="testimonial">
-        <p class="quote">"I skipped the challenge with instant funding and was live within the hour. Support answered every question I had before I even signed up."</p>
-        <div class="who">
-          <div class="avatar">DO</div>
-          <div><div class="name">David O.</div><div class="loc">Nigeria</div></div>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero__glow hero__glow--one"></div>
+        <div class="hero__glow hero__glow--two"></div>
+        <div class="container hero__grid">
+          <div class="hero__content reveal">
+            <div class="rating-pill">
+              <span class="rating-pill__stars" aria-label="Five star rating">★★★★★</span>
+              <span>Trusted by funded traders worldwide</span>
+            </div>
+
+            <h1>Dive into funded trading with serious capital.</h1>
+            <p class="hero__lead">
+              Choose a funding model, prove your consistency, and keep more of your profits with a clean trader-first dashboard.
+            </p>
+
+            <div class="hero__actions">
+              <a href="#accounts" class="btn btn--primary btn--large">Choose an Account</a>
+              <a href="#steps" class="btn btn--white btn--large">See the Process</a>
+            </div>
+
+            <div class="hero__proof">
+              <div>
+                <strong data-counter="300000">0</strong>
+                <span>Traders</span>
+              </div>
+              <div>
+                <strong data-counter="940">0</strong>
+                <span>Score / 100</span>
+              </div>
+              <div>
+                <strong data-counter="8000000">0</strong>
+                <span>Rewards tracked</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__visual reveal">
+            <div class="dashboard-card">
+              <div class="dashboard-card__top">
+                <div>
+                  <span>Trading dashboard</span>
+                  <strong>$100,000</strong>
+                </div>
+                <span class="status-pill">Live</span>
+              </div>
+
+              <div class="chart-card" aria-hidden="true">
+                <div class="chart-card__grid"></div>
+                <svg viewBox="0 0 440 170" role="img" aria-label="Rising account equity chart">
+                  <defs>
+                    <linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1">
+                      <stop offset="0%" stop-color="#00a9ff" stop-opacity=".36" />
+                      <stop offset="100%" stop-color="#0bd8bd" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                  <path d="M12 142 C52 116 70 128 106 98 C143 67 169 92 202 72 C240 48 262 60 296 39 C340 10 370 44 428 18 L428 170 L12 170 Z" fill="url(#chartFill)" />
+                  <path d="M12 142 C52 116 70 128 106 98 C143 67 169 92 202 72 C240 48 262 60 296 39 C340 10 370 44 428 18" fill="none" stroke="#00a9ff" stroke-width="8" stroke-linecap="round" />
+                </svg>
+              </div>
+
+              <div class="dashboard-metrics">
+                <div>
+                  <span>Profit split</span>
+                  <strong>100%</strong>
+                </div>
+                <div>
+                  <span>First reward</span>
+                  <strong>On demand</strong>
+                </div>
+                <div>
+                  <span>Risk limit</span>
+                  <strong>Clear</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="floating-reward-card">
+              <span class="floating-reward-card__label">Recent reward</span>
+              <strong>$24,850</strong>
+              <p>Processed for a verified trader</p>
+              <div class="avatar-stack" aria-label="Trader avatars">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="brand-strip" aria-label="Trust highlights">
+        <div class="container brand-strip__inner">
+          <span>Fast reward reviews</span>
+          <span>Multiple account models</span>
+          <span>Professional trading platforms</span>
+          <span>Transparent rules</span>
+        </div>
+      </section>
+
+      <section class="section rewards" id="rewards">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Verified rewards</span>
+            <h2>Reward cards that feel real, premium, and easy to scan.</h2>
+            <p>Showcase trader payouts, account progress, and trust signals without needing a database yet.</p>
+          </div>
+
+          <div class="reward-grid" data-rewards-grid></div>
+        </div>
+      </section>
+
+      <section class="section account-builder" id="accounts">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Choose your account</span>
+            <h2>A functional account selector with live pricing.</h2>
+            <p>Tabs, account sizes, quantity discounts, allocation totals, and checkout summary are handled in JavaScript.</p>
+          </div>
+
+          <div class="builder-card reveal">
+            <div class="builder-card__header">
+              <div>
+                <span class="eyebrow">Funding model</span>
+                <h3>Build your account</h3>
+              </div>
+              <div class="promo-box">
+                <span>Promo applied</span>
+                <strong>AQUA25</strong>
+              </div>
+            </div>
+
+            <div class="model-tabs" data-model-tabs aria-label="Funding model options"></div>
+            <div class="size-tabs" data-size-tabs aria-label="Account size options"></div>
+
+            <div class="builder-layout">
+              <div class="model-panel">
+                <span class="model-panel__tag" data-model-tag>Most popular</span>
+                <h4 data-model-title>Instant Funding</h4>
+                <p data-model-description></p>
+
+                <div class="feature-list" data-feature-list></div>
+              </div>
+
+              <aside class="checkout-panel" aria-label="Checkout summary">
+                <div class="checkout-panel__top">
+                  <span>Selected allocation</span>
+                  <strong data-allocation>$100,000</strong>
+                </div>
+
+                <div class="quantity-control" aria-label="Number of accounts">
+                  <button type="button" data-qty-minus aria-label="Decrease accounts">-</button>
+                  <div>
+                    <span data-quantity>1</span>
+                    <small>account</small>
+                  </div>
+                  <button type="button" data-qty-plus aria-label="Increase accounts">+</button>
+                </div>
+
+                <dl class="price-list">
+                  <div>
+                    <dt>Base price</dt>
+                    <dd data-base-price>$0</dd>
+                  </div>
+                  <div>
+                    <dt>Discount</dt>
+                    <dd data-discount>25%</dd>
+                  </div>
+                  <div>
+                    <dt>You save</dt>
+                    <dd data-savings>$0</dd>
+                  </div>
+                </dl>
+
+                <div class="checkout-total">
+                  <span>Total</span>
+                  <strong data-total>$0</strong>
+                </div>
+
+                <a href="#" class="btn btn--primary btn--full">Get Funded</a>
+                <p class="checkout-note">Demo trading only. Connect this button to checkout when ready.</p>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="container proof__grid">
+          <div class="proof-card reveal">
+            <span>Total rewards</span>
+            <strong>$8M+</strong>
+            <p>Designed to present a strong headline number with trust and clarity.</p>
+          </div>
+          <div class="proof-card reveal">
+            <span>Average reward</span>
+            <strong>$2,450</strong>
+            <p>Useful for building confidence before the pricing section.</p>
+          </div>
+          <div class="proof-card reveal">
+            <span>Highest trader reward</span>
+            <strong>$119K</strong>
+            <p>Large proof points stay readable on both desktop and mobile.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section steps" id="steps">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">How it works</span>
+            <h2>Your trading skill, supported by structured capital.</h2>
+          </div>
+
+          <div class="step-grid">
+            <article class="step-card reveal">
+              <span>01</span>
+              <h3>Pick a model</h3>
+              <p>Choose instant, one-step, or two-step based on your trading style and risk comfort.</p>
+            </article>
+            <article class="step-card reveal">
+              <span>02</span>
+              <h3>Trade the rules</h3>
+              <p>Follow clear objectives, manage drawdown, and keep your account consistent.</p>
+            </article>
+            <article class="step-card reveal">
+              <span>03</span>
+              <h3>Request rewards</h3>
+              <p>When eligible, submit your reward request from the dashboard and track the status.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section benefits">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Why traders like it</span>
+            <h2>Clean rules, strong terms, and a modern trader experience.</h2>
+          </div>
+
+          <div class="benefit-grid" data-benefits-grid></div>
+        </div>
+      </section>
+
+      <section class="section platforms" id="platforms">
+        <div class="container platforms__panel reveal">
+          <div class="platforms__copy">
+            <span class="eyebrow">Trading platforms</span>
+            <h2>Built for fast execution and familiar trading tools.</h2>
+            <p>Present platform options, spreads, and account access in a simple section that feels premium without becoming cluttered.</p>
+            <a href="#accounts" class="btn btn--white">Start with an Account</a>
+          </div>
+
+          <div class="platform-grid">
+            <div class="platform-card">
+              <span>01</span>
+              <strong>MetaTrader 5</strong>
+            </div>
+            <div class="platform-card">
+              <span>02</span>
+              <strong>cTrader</strong>
+            </div>
+            <div class="platform-card">
+              <span>03</span>
+              <strong>TradeLocker</strong>
+            </div>
+            <div class="platform-card">
+              <span>04</span>
+              <strong>MatchTrade</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section support">
+        <div class="container support__grid">
+          <div class="support-card reveal">
+            <span class="eyebrow">Support</span>
+            <h2>Fast answers when traders need help.</h2>
+            <p>Use this section for Discord, chat, email, or help center links. The current buttons are ready to connect later.</p>
+            <div class="support-actions">
+              <a href="#" class="btn btn--primary">Contact Support</a>
+              <a href="#faq" class="btn btn--ghost">Read FAQ</a>
+            </div>
+          </div>
+
+          <div class="support-list reveal">
+            <div>
+              <strong>24/7 coverage</strong>
+              <span>Always-on help channels for account and platform questions.</span>
+            </div>
+            <div>
+              <strong>Clear documentation</strong>
+              <span>Rules and common cases can be linked directly from this block.</span>
+            </div>
+            <div>
+              <strong>Fast reward updates</strong>
+              <span>Use status cards to reduce support tickets and improve trust.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reviews" id="reviews">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Trader feedback</span>
+            <h2>Review cards built for trust and social proof.</h2>
+          </div>
+
+          <div class="review-grid" data-review-grid></div>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq">
+        <div class="container faq__grid">
+          <div class="faq__intro reveal">
+            <span class="eyebrow">Questions</span>
+            <h2>Everything important, without a heavy page.</h2>
+            <p>Add or edit FAQ items in <code>assets/js/data.js</code>. No database needed for this stage.</p>
+          </div>
+
+          <div class="faq-list reveal" data-faq-list></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="brand brand--footer" href="#top">
+            <img src="assets/images/logo.svg" alt="" class="brand__mark" />
+            <span>AquaFunded</span>
+          </a>
+          <p>A professional front-end build for a funded trading brand. Ready for checkout links, live data, and backend integration later.</p>
+        </div>
+
+        <div>
+          <h3>Company</h3>
+          <a href="#steps">How it works</a>
+          <a href="#rewards">Rewards</a>
+          <a href="#reviews">Reviews</a>
+        </div>
+
+        <div>
+          <h3>Accounts</h3>
+          <a href="#accounts">Instant</a>
+          <a href="#accounts">One Step</a>
+          <a href="#accounts">Two Step</a>
+        </div>
+
+        <div>
+          <h3>Support</h3>
+          <a href="#faq">FAQ</a>
+          <a href="#">Contact</a>
+          <a href="#">Rules</a>
         </div>
       </div>
-      <div class="testimonial">
-        <p class="quote">"Scaled from a 25k to a 150k account over four cycles. The scaling plan is transparent — no surprises at review time."</p>
-        <div class="who">
-          <div class="avatar">HS</div>
-          <div><div class="name">Hana S.</div><div class="loc">South Korea</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section id="faq">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Frequently asked questions</h2>
-      <p>Everything you need to know before your first evaluation.</p>
-    </div>
-    <div class="faq-list">
-      <div class="faq-item open">
-        <button class="faq-q">What is a prop trading firm, exactly?<span class="plus">+</span></button>
-        <div class="faq-a"><p>A proprietary trading firm gives traders access to its own capital instead of requiring you to risk your own. You prove your process on an evaluation account, then trade a funded account and keep a share of what you make.</p></div>
+      <div class="container footer-bottom">
+        <p>© <span data-year></span> AquaFunded. Demo front-end. All trading involves risk.</p>
+        <p>Built with HTML, CSS, and JavaScript.</p>
       </div>
-      <div class="faq-item">
-        <button class="faq-q">Do I need prior trading experience?<span class="plus">+</span></button>
-        <div class="faq-a"><p>No formal experience or certification is required. Anyone who can pass the evaluation's risk and profit criteria is eligible for a funded account.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">How long does the evaluation take?<span class="plus">+</span></button>
-        <div class="faq-a"><p>As long as you need. There's no minimum or maximum number of trading days — you set the pace, or skip the evaluation entirely with an instant funding account.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">What happens if I breach the rules?<span class="plus">+</span></button>
-        <div class="faq-a"><p>The account is closed, but there's no cooldown and no cap on retries. You can start a new evaluation right away.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">How fast are payouts?<span class="plus">+</span></button>
-        <div class="faq-a"><p>Most requests are reviewed and paid within 24 hours. On-demand payout accounts let you withdraw as soon as you're eligible, rather than waiting for a fixed cycle.</p></div>
-      </div>
-    </div>
+    </footer>
   </div>
-</section>
 
-<section>
-  <div class="wrap">
-    <div class="cta-band">
-      <div>
-        <h2>Your next funded account starts here.</h2>
-        <p>Pick an account size, complete checkout, and start trading today.</p>
-      </div>
-      <a href="#pricing" class="btn btn-primary">Get funded</a>
-    </div>
-  </div>
-</section>
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
 
-<footer>
-  <div class="wrap">
-    <div class="footer-grid">
-      <div>
-        <a href="#" class="brand"><img src="images/logo-mark.svg" alt="">Tidewater</a>
-        <p class="about">Funded trading accounts for traders who'd rather risk our capital than their own. Simulated trading services, provided globally.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Trade</h4>
-        <a href="#pricing">Account sizes</a>
-        <a href="#how-it-works">How it works</a>
-        <a href="#">Scaling plan</a>
-        <a href="#">Rules</a>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <a href="#">About</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#">Affiliates</a>
-        <a href="#">Blog</a>
-      </div>
-      <div class="footer-col">
-        <h4>Support</h4>
-        <a href="#faq">FAQ</a>
-        <a href="#">Contact</a>
-        <a href="#">Status</a>
-      </div>
-      <div class="footer-col">
-        <h4>Legal</h4>
-        <a href="#">Refund policy</a>
-        <a href="#">Privacy policy</a>
-        <a href="#">Terms of service</a>
-      </div>
-    </div>
-    <div class="footer-legal">
-      Tidewater provides simulated trading evaluations only. Nothing on this site is investment advice, an offer to sell, or a solicitation to buy any security or financial instrument. Trading foreign exchange and CFDs on margin carries a high level of risk and may not be suitable for everyone. You could sustain a loss of some or all of your capital; past performance is not indicative of future results. Always consult an independent financial professional before making any trading decision. This is a demonstration layout built for illustrative purposes and is not affiliated with any real financial services provider.
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 Tidewater. All rights reserved.</span>
-      <div class="links">
-        <a href="#">Refund Policy</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/pricing.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
