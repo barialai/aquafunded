@@ -1,54 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A professional funded trading landing page with account selection, pricing, reviews, benefits, and platform details." />
-  <title>AquaFunded - Professional Funded Trading Website</title>
-  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Trade with Tidewater capital through flexible account models and clear trader-first rules.">
+  <title>Tidewater | Funded Trading Capital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="page-shell">
     <div class="offer-bar">
       <div class="container offer-bar__inner">
-        <p><strong>Limited campaign:</strong> save on your first account and unlock fast reward access.</p>
-        <button class="copy-code" type="button" data-copy-value="AQUA25" aria-label="Copy promo code">
-          <span>Code AQUA25</span>
-          <small>Copy</small>
-        </button>
+        <p><strong>25% OFF + 150% Refund</strong> on your next account.</p>
+        <button class="copy-code" type="button" data-copy-code="BACK2WORK">BACK2WORK <small>Copy</small></button>
       </div>
     </div>
 
-    <header class="site-header" data-header>
+    <header class="site-header">
       <div class="container nav">
-        <a class="brand" href="#top" aria-label="AquaFunded home">
-          <img src="assets/images/logo.svg" alt="" class="brand__mark" />
-          <span>AquaFunded</span>
+        <a class="brand" href="#top" aria-label="Tidewater home">
+          <img class="brand__mark" src="images/logo-mark.svg" alt="">
+          <span>Tidewater</span>
         </a>
-
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span class="sr-only">Toggle navigation</span>
-        </button>
-
-        <nav class="nav-links" id="primary-navigation" data-nav-menu>
-          <a href="#accounts">Accounts</a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#pricing">Accounts</a>
           <a href="#rewards">Rewards</a>
-          <a href="#steps">How it works</a>
-          <a href="#platforms">Platforms</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#benefits">Benefits</a>
           <a href="#reviews">Reviews</a>
           <a href="#faq">FAQ</a>
         </nav>
-
         <div class="nav-actions">
-          <a href="#" class="btn btn--ghost">Login</a>
-          <a href="#accounts" class="btn btn--primary">Get Funded</a>
+          <a class="btn btn--ghost" href="#faq">Login</a>
+          <a class="btn btn--primary" href="#pricing">Get Funded</a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span><span></span><span></span><span class="sr-only">Menu</span>
+          </button>
         </div>
       </div>
     </header>
@@ -58,373 +48,178 @@
         <div class="hero__glow hero__glow--one"></div>
         <div class="hero__glow hero__glow--two"></div>
         <div class="container hero__grid">
-          <div class="hero__content reveal">
-            <div class="rating-pill">
-              <span class="rating-pill__stars" aria-label="Five star rating">★★★★★</span>
-              <span>Trusted by funded traders worldwide</span>
-            </div>
-
-            <h1>Dive into funded trading with serious capital.</h1>
-            <p class="hero__lead">
-              Choose a funding model, prove your consistency, and keep more of your profits with a clean trader-first dashboard.
-            </p>
-
+          <div class="hero__copy reveal">
+            <div class="rating-pill"><span class="rating-pill__stars">★★★★★</span><span>9.4/10 from verified traders</span></div>
+            <h1>Dive into success with our capital.</h1>
+            <p class="hero__lead">Choose the account model that fits your trading style, trade with clear rules, and keep more of what you earn.</p>
             <div class="hero__actions">
-              <a href="#accounts" class="btn btn--primary btn--large">Choose an Account</a>
-              <a href="#steps" class="btn btn--white btn--large">See the Process</a>
+              <a class="btn btn--primary btn--large" href="#pricing">Choose an account</a>
+              <a class="btn btn--ghost btn--large" href="#how-it-works">How it works</a>
             </div>
-
             <div class="hero__proof">
-              <div>
-                <strong data-counter="300000">0</strong>
-                <span>Traders</span>
-              </div>
-              <div>
-                <strong data-counter="940">0</strong>
-                <span>Score / 100</span>
-              </div>
-              <div>
-                <strong data-counter="8000000">0</strong>
-                <span>Rewards tracked</span>
-              </div>
+              <div><strong>$8M+</strong><span>Total rewards</span></div>
+              <div><strong>300K+</strong><span>Trader community</span></div>
+              <div><strong>24/7</strong><span>Support access</span></div>
             </div>
           </div>
 
           <div class="hero__visual reveal">
             <div class="dashboard-card">
               <div class="dashboard-card__top">
-                <div>
-                  <span>Trading dashboard</span>
-                  <strong>$100,000</strong>
-                </div>
-                <span class="status-pill">Live</span>
+                <div><span>Funded account</span><strong>$200,000</strong></div>
+                <span class="status-pill">Active</span>
               </div>
-
-              <div class="chart-card" aria-hidden="true">
+              <div class="chart-card">
                 <div class="chart-card__grid"></div>
-                <svg viewBox="0 0 440 170" role="img" aria-label="Rising account equity chart">
-                  <defs>
-                    <linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1">
-                      <stop offset="0%" stop-color="#00a9ff" stop-opacity=".36" />
-                      <stop offset="100%" stop-color="#0bd8bd" stop-opacity="0" />
-                    </linearGradient>
-                  </defs>
-                  <path d="M12 142 C52 116 70 128 106 98 C143 67 169 92 202 72 C240 48 262 60 296 39 C340 10 370 44 428 18 L428 170 L12 170 Z" fill="url(#chartFill)" />
-                  <path d="M12 142 C52 116 70 128 106 98 C143 67 169 92 202 72 C240 48 262 60 296 39 C340 10 370 44 428 18" fill="none" stroke="#00a9ff" stroke-width="8" stroke-linecap="round" />
+                <svg viewBox="0 0 500 190" role="img" aria-label="Growth chart">
+                  <defs><linearGradient id="chartLine" x1="0" x2="1"><stop offset="0" stop-color="#16d8bc"/><stop offset="1" stop-color="#00a9ff"/></linearGradient></defs>
+                  <path d="M10 165 C70 150 90 125 135 138 S215 78 255 100 S330 55 365 70 S430 25 490 38" fill="none" stroke="url(#chartLine)" stroke-width="8" stroke-linecap="round"/>
                 </svg>
               </div>
-
               <div class="dashboard-metrics">
-                <div>
-                  <span>Profit split</span>
-                  <strong>100%</strong>
-                </div>
-                <div>
-                  <span>First reward</span>
-                  <strong>On demand</strong>
-                </div>
-                <div>
-                  <span>Risk limit</span>
-                  <strong>Clear</strong>
-                </div>
+                <div><span>Total rewards</span><strong>$24,342</strong></div>
+                <div><span>Profit split</span><strong>Up to 100%</strong></div>
+                <div><span>Reward cycle</span><strong>On demand</strong></div>
               </div>
             </div>
-
             <div class="floating-reward-card">
-              <span class="floating-reward-card__label">Recent reward</span>
-              <strong>$24,850</strong>
-              <p>Processed for a verified trader</p>
-              <div class="avatar-stack" aria-label="Trader avatars">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
+              <span class="floating-reward-card__label">Latest reward</span>
+              <strong>$13,412</strong>
+              <p>Approved and paid to a Tidewater trader.</p>
+              <div class="avatar-stack"><span></span><span></span><span></span><span></span></div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="brand-strip" aria-label="Trust highlights">
-        <div class="container brand-strip__inner">
-          <span>Fast reward reviews</span>
-          <span>Multiple account models</span>
-          <span>Professional trading platforms</span>
-          <span>Transparent rules</span>
+      <div class="brand-strip">
+        <div class="container brand-strip__inner"><span>Clear rules</span><span>Flexible models</span><span>Fast rewards</span><span>Trader-first support</span></div>
+      </div>
+
+      <section id="rewards" class="section">
+        <div class="container">
+          <div class="section-heading reveal"><span class="eyebrow">Recent rewards</span><h2>Traders getting paid.</h2><p>A clean snapshot of recent reward amounts from across the community.</p></div>
+          <div class="reward-grid" data-reward-grid></div>
         </div>
       </section>
 
-      <section class="section rewards" id="rewards">
+      <section id="pricing" class="section">
         <div class="container">
-          <div class="section-heading reveal">
-            <span class="eyebrow">Verified rewards</span>
-            <h2>Reward cards that feel real, premium, and easy to scan.</h2>
-            <p>Showcase trader payouts, account progress, and trust signals without needing a database yet.</p>
-          </div>
-
-          <div class="reward-grid" data-rewards-grid></div>
-        </div>
-      </section>
-
-      <section class="section account-builder" id="accounts">
-        <div class="container">
-          <div class="section-heading reveal">
-            <span class="eyebrow">Choose your account</span>
-            <h2>A functional account selector with live pricing.</h2>
-            <p>Tabs, account sizes, quantity discounts, allocation totals, and checkout summary are handled in JavaScript.</p>
-          </div>
-
           <div class="builder-card reveal">
             <div class="builder-card__header">
-              <div>
-                <span class="eyebrow">Funding model</span>
-                <h3>Build your account</h3>
-              </div>
-              <div class="promo-box">
-                <span>Promo applied</span>
-                <strong>AQUA25</strong>
-              </div>
+              <div><span class="eyebrow">Account builder</span><h3>Choose your account</h3></div>
+              <div class="promo-box"><span>Current offer</span><strong>Up to 50% off</strong></div>
             </div>
-
-            <div class="model-tabs" data-model-tabs aria-label="Funding model options"></div>
-            <div class="size-tabs" data-size-tabs aria-label="Account size options"></div>
+            <div class="model-tabs" data-model-tabs></div>
+            <div class="size-tabs" data-size-tabs></div>
 
             <div class="builder-layout">
               <div class="model-panel">
-                <span class="model-panel__tag" data-model-tag>Most popular</span>
-                <h4 data-model-title>Instant Funding</h4>
+                <span class="model-panel__tag" data-model-tag></span>
+                <h4 data-model-title></h4>
                 <p data-model-description></p>
-
                 <div class="feature-list" data-feature-list></div>
               </div>
 
-              <aside class="checkout-panel" aria-label="Checkout summary">
-                <div class="checkout-panel__top">
-                  <span>Selected allocation</span>
-                  <strong data-allocation>$100,000</strong>
+              <aside class="checkout-panel">
+                <div class="checkout-panel__top"><span>Total allocation</span><strong data-allocation>$100,000</strong></div>
+                <div class="quantity-control">
+                  <button type="button" data-qty-minus aria-label="Decrease quantity">−</button>
+                  <div><span data-quantity>1</span><small>Account(s)</small></div>
+                  <button type="button" data-qty-plus aria-label="Increase quantity">+</button>
                 </div>
-
-                <div class="quantity-control" aria-label="Number of accounts">
-                  <button type="button" data-qty-minus aria-label="Decrease accounts">-</button>
-                  <div>
-                    <span data-quantity>1</span>
-                    <small>account</small>
-                  </div>
-                  <button type="button" data-qty-plus aria-label="Increase accounts">+</button>
-                </div>
-
                 <dl class="price-list">
-                  <div>
-                    <dt>Base price</dt>
-                    <dd data-base-price>$0</dd>
-                  </div>
-                  <div>
-                    <dt>Discount</dt>
-                    <dd data-discount>25%</dd>
-                  </div>
-                  <div>
-                    <dt>You save</dt>
-                    <dd data-savings>$0</dd>
-                  </div>
+                  <div><dt>Base price</dt><dd data-base-price>$529</dd></div>
+                  <div><dt>Discount</dt><dd data-discount>25%</dd></div>
+                  <div><dt>You save</dt><dd data-savings>$132</dd></div>
                 </dl>
-
-                <div class="checkout-total">
-                  <span>Total</span>
-                  <strong data-total>$0</strong>
-                </div>
-
-                <a href="#" class="btn btn--primary btn--full">Get Funded</a>
-                <p class="checkout-note">Demo trading only. Connect this button to checkout when ready.</p>
+                <div class="checkout-total"><span>Total today</span><strong data-total>$397</strong></div>
+                <a class="btn btn--white btn--full" href="#">Continue to checkout</a>
+                <p class="checkout-note">One-time purchase. Final checkout terms can be connected later.</p>
               </aside>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section proof">
+      <section class="proof section">
         <div class="container proof__grid">
-          <div class="proof-card reveal">
-            <span>Total rewards</span>
-            <strong>$8M+</strong>
-            <p>Designed to present a strong headline number with trust and clarity.</p>
-          </div>
-          <div class="proof-card reveal">
-            <span>Average reward</span>
-            <strong>$2,450</strong>
-            <p>Useful for building confidence before the pricing section.</p>
-          </div>
-          <div class="proof-card reveal">
-            <span>Highest trader reward</span>
-            <strong>$119K</strong>
-            <p>Large proof points stay readable on both desktop and mobile.</p>
-          </div>
+          <article class="proof-card reveal"><span>Community</span><strong>300K+</strong><p>Built for a broad global trader community.</p></article>
+          <article class="proof-card reveal"><span>Total rewards</span><strong>$8M+</strong><p>Reward-focused presentation with transparent account choices.</p></article>
+          <article class="proof-card reveal"><span>Support</span><strong>24/7</strong><p>Fast access to answers throughout the trader journey.</p></article>
         </div>
       </section>
 
-      <section class="section steps" id="steps">
+      <section id="how-it-works" class="section">
         <div class="container">
-          <div class="section-heading reveal">
-            <span class="eyebrow">How it works</span>
-            <h2>Your trading skill, supported by structured capital.</h2>
-          </div>
-
+          <div class="section-heading reveal"><span class="eyebrow">Simple process</span><h2>How it works</h2><p>Pick the route that fits you, meet the rules, then focus on consistent trading.</p></div>
           <div class="step-grid">
-            <article class="step-card reveal">
-              <span>01</span>
-              <h3>Pick a model</h3>
-              <p>Choose instant, one-step, or two-step based on your trading style and risk comfort.</p>
-            </article>
-            <article class="step-card reveal">
-              <span>02</span>
-              <h3>Trade the rules</h3>
-              <p>Follow clear objectives, manage drawdown, and keep your account consistent.</p>
-            </article>
-            <article class="step-card reveal">
-              <span>03</span>
-              <h3>Request rewards</h3>
-              <p>When eligible, submit your reward request from the dashboard and track the status.</p>
-            </article>
+            <article class="step-card reveal"><span>01</span><h3>Choose your model</h3><p>Select Instant, One Step, Two Step, or Elite and choose your account size.</p></article>
+            <article class="step-card reveal"><span>02</span><h3>Trade the rules</h3><p>Follow the account objectives and risk conditions for the model you selected.</p></article>
+            <article class="step-card reveal"><span>03</span><h3>Earn rewards</h3><p>Once eligible, request your reward according to the account cycle and terms.</p></article>
           </div>
         </div>
       </section>
 
-      <section class="section benefits">
+      <section id="benefits" class="section">
         <div class="container">
-          <div class="section-heading reveal">
-            <span class="eyebrow">Why traders like it</span>
-            <h2>Clean rules, strong terms, and a modern trader experience.</h2>
-          </div>
-
-          <div class="benefit-grid" data-benefits-grid></div>
+          <div class="section-heading reveal"><span class="eyebrow">Trader benefits</span><h2>Built to stay clear.</h2><p>Important account advantages are presented in a fast-scanning, responsive grid.</p></div>
+          <div class="benefit-grid" data-benefit-grid></div>
         </div>
       </section>
 
-      <section class="section platforms" id="platforms">
+      <section class="platforms section">
         <div class="container platforms__panel reveal">
-          <div class="platforms__copy">
-            <span class="eyebrow">Trading platforms</span>
-            <h2>Built for fast execution and familiar trading tools.</h2>
-            <p>Present platform options, spreads, and account access in a simple section that feels premium without becoming cluttered.</p>
-            <a href="#accounts" class="btn btn--white">Start with an Account</a>
-          </div>
-
+          <div class="platforms__copy"><span class="eyebrow">Trading access</span><h2>Use the setup that works for you.</h2><p>Keep the page focused on account selection while leaving room to connect your real trading-platform integrations later.</p><a class="btn btn--white" href="#pricing">View accounts</a></div>
           <div class="platform-grid">
-            <div class="platform-card">
-              <span>01</span>
-              <strong>MetaTrader 5</strong>
-            </div>
-            <div class="platform-card">
-              <span>02</span>
-              <strong>cTrader</strong>
-            </div>
-            <div class="platform-card">
-              <span>03</span>
-              <strong>TradeLocker</strong>
-            </div>
-            <div class="platform-card">
-              <span>04</span>
-              <strong>MatchTrade</strong>
-            </div>
+            <div class="platform-card"><span>01</span><strong>Desktop trading</strong></div>
+            <div class="platform-card"><span>02</span><strong>Web access</strong></div>
+            <div class="platform-card"><span>03</span><strong>Mobile monitoring</strong></div>
+            <div class="platform-card"><span>04</span><strong>Clear execution data</strong></div>
           </div>
         </div>
       </section>
 
-      <section class="section support">
+      <section class="support section">
         <div class="container support__grid">
-          <div class="support-card reveal">
-            <span class="eyebrow">Support</span>
-            <h2>Fast answers when traders need help.</h2>
-            <p>Use this section for Discord, chat, email, or help center links. The current buttons are ready to connect later.</p>
-            <div class="support-actions">
-              <a href="#" class="btn btn--primary">Contact Support</a>
-              <a href="#faq" class="btn btn--ghost">Read FAQ</a>
-            </div>
-          </div>
-
-          <div class="support-list reveal">
-            <div>
-              <strong>24/7 coverage</strong>
-              <span>Always-on help channels for account and platform questions.</span>
-            </div>
-            <div>
-              <strong>Clear documentation</strong>
-              <span>Rules and common cases can be linked directly from this block.</span>
-            </div>
-            <div>
-              <strong>Fast reward updates</strong>
-              <span>Use status cards to reduce support tickets and improve trust.</span>
-            </div>
-          </div>
+          <div class="support-card reveal"><span class="eyebrow">Support</span><h2>Fast, professional help.</h2><p>Connect live chat, Discord, email, or your help center when those destinations are ready.</p><div class="support-actions"><a class="btn btn--primary" href="#faq">Read FAQ</a><a class="btn btn--ghost" href="mailto:support@example.com">Contact support</a></div></div>
+          <div class="support-list reveal"><div><strong>Account questions</strong><span>Help traders understand models, sizes, pricing, and rules.</span></div><div><strong>Technical support</strong><span>Give clear paths for platform and dashboard assistance.</span></div><div><strong>Reward support</strong><span>Keep payout and reward guidance easy to find.</span></div></div>
         </div>
       </section>
 
-      <section class="section reviews" id="reviews">
+      <section id="reviews" class="section">
         <div class="container">
-          <div class="section-heading reveal">
-            <span class="eyebrow">Trader feedback</span>
-            <h2>Review cards built for trust and social proof.</h2>
-          </div>
-
+          <div class="section-heading reveal"><span class="eyebrow">Trader feedback</span><h2>What traders say</h2><p>Responsive testimonial cards generated directly from your shared data file.</p></div>
           <div class="review-grid" data-review-grid></div>
         </div>
       </section>
 
-      <section class="section faq" id="faq">
+      <section id="faq" class="faq section">
         <div class="container faq__grid">
-          <div class="faq__intro reveal">
-            <span class="eyebrow">Questions</span>
-            <h2>Everything important, without a heavy page.</h2>
-            <p>Add or edit FAQ items in <code>assets/js/data.js</code>. No database needed for this stage.</p>
-          </div>
-
-          <div class="faq-list reveal" data-faq-list></div>
+          <div class="faq__intro reveal"><span class="eyebrow">FAQ</span><h2>Questions, answered.</h2><p>These items are generated from data.js, so you only need to update your FAQ content in one place.</p></div>
+          <div class="faq-list" data-faq-list></div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-grid">
-        <div class="footer-brand">
-          <a class="brand brand--footer" href="#top">
-            <img src="assets/images/logo.svg" alt="" class="brand__mark" />
-            <span>AquaFunded</span>
-          </a>
-          <p>A professional front-end build for a funded trading brand. Ready for checkout links, live data, and backend integration later.</p>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand"><a class="brand brand--footer" href="#top"><img class="brand__mark" src="images/logo-mark.svg" alt=""><span>Tidewater</span></a><p>A modern funded-trading website structure with data-driven pricing and content.</p></div>
+          <div><h3>Trade</h3><a href="#pricing">Accounts</a><a href="#benefits">Benefits</a></div>
+          <div><h3>Company</h3><a href="#how-it-works">How it works</a><a href="#reviews">Reviews</a></div>
+          <div><h3>Support</h3><a href="#faq">FAQ</a><a href="mailto:support@example.com">Contact</a></div>
         </div>
-
-        <div>
-          <h3>Company</h3>
-          <a href="#steps">How it works</a>
-          <a href="#rewards">Rewards</a>
-          <a href="#reviews">Reviews</a>
-        </div>
-
-        <div>
-          <h3>Accounts</h3>
-          <a href="#accounts">Instant</a>
-          <a href="#accounts">One Step</a>
-          <a href="#accounts">Two Step</a>
-        </div>
-
-        <div>
-          <h3>Support</h3>
-          <a href="#faq">FAQ</a>
-          <a href="#">Contact</a>
-          <a href="#">Rules</a>
-        </div>
-      </div>
-
-      <div class="container footer-bottom">
-        <p>© <span data-year></span> AquaFunded. Demo front-end. All trading involves risk.</p>
-        <p>Built with HTML, CSS, and JavaScript.</p>
+        <div class="footer-bottom"><p>© <span data-year></span> Tidewater. All rights reserved.</p><p>Demo website structure — connect your production legal pages before launch.</p></div>
       </div>
     </footer>
   </div>
 
-  <div class="toast" data-toast role="status" aria-live="polite"></div>
+  <div class="toast" role="status" aria-live="polite"></div>
 
-  <script src="assets/js/data.js" defer></script>
-  <script src="assets/js/pricing.js" defer></script>
-  <script src="assets/js/main.js" defer></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+  <script src="pricing.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
