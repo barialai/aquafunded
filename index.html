@@ -1,225 +1,534 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Trade with Tidewater capital through flexible account models and clear trader-first rules.">
-  <title>Tidewater | Funded Trading Capital</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tidewater | Funded Trading Capital, Kept Simple</title>
+<meta name="description" content="Trade with Tidewater's capital. Pass one evaluation, get funded up to $400k, and keep up to 100% of what you earn.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="page-shell">
-    <div class="offer-bar">
-      <div class="container offer-bar__inner">
-        <p><strong>25% OFF + 150% Refund</strong> on your next account.</p>
-        <button class="copy-code" type="button" data-copy-code="BACK2WORK">BACK2WORK <small>Copy</small></button>
+
+<div class="promo-bar">
+  <div class="wrap">
+    <span>💳 25% Off + 150% Refund</span>
+    <span>⏱ Limited Time</span>
+    <span>Code: <strong>BACK2WORK</strong></span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="#" class="brand"><img src="images/logo-mark.svg" alt="">Tidewater</a>
+    <nav class="main-nav">
+      <a href="#pricing">Markets</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#rewards">Rewards</a>
+      <a href="#">Affiliate</a>
+      <a href="#">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#" class="btn btn-login">Login</a>
+      <a href="#pricing" class="btn btn-primary">Get Funded</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open navigation"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"><img src="images/hero-orbs.svg" alt="" style="width:100%;height:100%;object-fit:cover;"></div>
+  <div class="wrap">
+    <div class="avatar-row">
+      <div class="avatar-stack">
+        <span class="av">JM</span><span class="av">RK</span><span class="av">HW</span>
+      </div>
+      <span style="font-size:0.92rem;font-weight:600;">Join <strong>300,000+ Traders</strong></span>
+    </div>
+    <div class="rating-pill">
+      <span><b>9.4/10</b> ★</span><span class="sep">|</span><span>From <b>5k+</b> verified reviews</span>
+    </div>
+    <h1>Dive into Success with our <span class="accent">Capital</span></h1>
+    <p class="lede">Trade with our capital and <strong>keep 100% of the profit</strong>, paid on demand.</p>
+    <div class="hero-cta"><a href="#pricing" class="btn btn-primary">Get Funded</a></div>
+    <div class="hero-note-row">
+      <span><span class="dot-icon"></span>Reward Guarantee</span>
+      <span><span class="dot-icon"></span>Millions Paid to Traders</span>
+    </div>
+
+    <div class="offer-banner">
+      <div>
+        <div style="font-size:0.85rem;opacity:0.85;">BACK2WORK</div>
+        <div class="big">25% OFF + 150% Refund</div>
+      </div>
+      <div class="code-tag">⏱ Limited Time · Code: BACK2WORK</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="trust-row">
+      <div class="trust-card cream">
+        <h3>Payout Guarantee</h3>
+        <p class="sub">No denials</p>
+        <div class="payout-mock">
+          <div>
+            <div class="lbl">Payment received!</div>
+            <div class="amt">$2,428</div>
+          </div>
+          <div style="font-size:1.4rem;">📈</div>
+        </div>
+      </div>
+      <div class="trust-card pale">
+        <h3>Your Favorite Trading Platforms</h3>
+        <div class="platform-grid">
+          <img src="images/icon-platform-1.svg" alt="">
+          <img src="images/icon-platform-2.svg" alt="">
+          <img src="images/icon-platform-3.svg" alt="">
+          <img src="images/icon-platform-4.svg" alt="">
+          <img src="images/icon-platform-1.svg" alt="">
+          <img src="images/icon-platform-3.svg" alt="">
+        </div>
+      </div>
+      <div class="trust-card blue">
+        <h3>24/7 Support</h3>
+        <p class="sub">Always here to help</p>
+        <div class="support-orbit">
+          <div class="ring r1"></div>
+          <div class="ring r2"></div>
+        </div>
+      </div>
+    </div>
+    <div class="center-cta"><a href="#pricing" class="btn btn-primary">Get Funded</a></div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <div class="calc-shell">
+      <div class="section-head">
+        <h2>Choose your Account</h2>
+      </div>
+      <div class="toggle-pill">
+        <button class="active">CFDs</button>
+        <button>Futures</button>
+      </div>
+
+      <div class="limited-bar">
+        <div class="left"><span>⏱ Limited Time</span><span>»</span><span>25% OFF + 150% Refund</span></div>
+        <div class="code">BACK2WORK <span style="opacity:0.8;">Copy</span></div>
+      </div>
+
+      <div class="calc-grid">
+        <div>
+          <div class="calc-panel">
+            <h4>CFDs Model</h4>
+            <div class="pill-select model-select">
+              <button class="active" data-model="instant" data-mult="3">⚡ Instant · Most popular</button>
+              <button data-model="one" data-mult="1.35">One Step · New</button>
+              <button data-model="two" data-mult="1">Two Step</button>
+            </div>
+          </div>
+          <div class="calc-panel" style="margin-top:20px;">
+            <h4>Model Type</h4>
+            <div class="pill-select">
+              <button class="active">Standard</button>
+              <button>Pro · 6% max loss</button>
+            </div>
+            <h4 style="margin-top:22px;">Add-ons available at checkout</h4>
+            <div class="chip-select">
+              <button id="splitToggle">100% Profit Split</button>
+              <button>Swap Free</button>
+              <button>First Reward On Demand</button>
+            </div>
+            <div class="rules-table">
+              <div class="row"><span>Profit Split</span><strong id="outSplit">90%</strong></div>
+              <div class="row"><span>Rewards Cycle</span><strong>Bi-Weekly</strong></div>
+              <div class="row"><span>Min Trading Days</span><strong>5</strong></div>
+              <div class="row"><span>Leverage</span><strong>1:50</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="output-panel">
+          <h4>Account Size</h4>
+          <p class="help">Includes your 25% promo, plus extra for more accounts.</p>
+          <div class="size-grid">
+            <button data-size="2500">2.5K</button>
+            <button data-size="5000">5K</button>
+            <button data-size="10000">10K</button>
+            <button data-size="25000">25K</button>
+            <button data-size="50000">50K</button>
+            <button class="active" data-size="100000">100K</button>
+            <button data-size="200000">200K</button>
+            <button data-size="300000">300K</button>
+            <button data-size="400000">400K</button>
+          </div>
+          <div class="row" style="display:flex;justify-content:space-between;font-size:0.85rem;opacity:0.85;">
+            <span>Average Reward</span><strong id="outAvgReward">$5,400</strong>
+          </div>
+          <div class="qty-wrap">
+            <div class="qty-head"><span>How many accounts?</span><small>More accounts unlock a larger discount.</small></div>
+            <div class="qty-grid">
+              <button class="active" type="button" data-qty="1"><b>1</b><span>25% off</span></button>
+              <button type="button" data-qty="2"><b>2</b><span>30%</span></button>
+              <button type="button" data-qty="3"><b>3</b><span>35%</span></button>
+              <button type="button" data-qty="4"><b>4</b><span>40%</span></button>
+              <button type="button" data-qty="5"><b>5</b><span>50%</span></button>
+            </div>
+          </div>
+          <div class="purchase-summary">
+            <div><span>Allocation</span><strong id="outAllocation">$100,000</strong></div>
+            <div><span>You save</span><strong id="outSave">$140</strong></div>
+          </div>
+          <div class="price-row">
+            <span class="now" id="outFee">$420</span>
+            <span class="was" id="outWas">$560</span>
+          </div>
+          <div class="price-tag">One-time fee · 100% refundable</div>
+          <a href="#" class="btn btn-white btn-block">Get Funded</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="press-strip">
+      <span>FinDaily</span><span>MarketPulse</span><span>TradeWire</span><span>GlobalFinance</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="stat-cards">
+      <div class="stat-card blue">
+        <div>
+          <div class="label">Total Rewards</div>
+          <div class="figure">$8,000,000+</div>
+        </div>
+        <div class="mini-bars"><span></span><span></span><span></span></div>
+      </div>
+      <div class="stack">
+        <div class="stat-card light">
+          <div class="label">Average Reward</div>
+          <div class="figure">$2,450</div>
+        </div>
+        <div class="stat-card light">
+          <div class="label">Highest Paid Trader</div>
+          <div class="figure">$119,175</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how-it-works">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow-pill">⚙ Steps</div>
+      <h2>How it works?</h2>
+      <p>Your skills. Our risk.</p>
+    </div>
+    <div class="steps">
+      <div class="step-card">
+        <span class="step-tag">Step 1</span>
+        <div class="step-visual"></div>
+        <h3>Take a challenge</h3>
+        <p>Prove your skill, or skip it with instant funding.</p>
+      </div>
+      <div class="step-card active">
+        <span class="step-tag">Step 2</span>
+        <div class="step-visual"></div>
+        <h3>Unlock capital</h3>
+        <p>Funded up to $400k.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-tag">Step 3</span>
+        <div class="step-visual"></div>
+        <h3>Trade & get paid</h3>
+        <p>100% of the profits.</p>
+      </div>
+    </div>
+    <div class="center-cta">
+      <a href="#pricing" class="btn btn-primary">Get Funded</a>
+      <a href="#" class="btn btn-outline">Learn More</a>
+      <p style="margin-top:16px;color:var(--slate);font-size:0.85rem;">From $14 for a $5k account</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="blue-band">
+      <div class="section-head">
+        <h2>Trade safely with us</h2>
+      </div>
+      <div class="band-grid">
+        <div class="band-card">
+          <h3>Your skill, our risk</h3>
+          <p>Trade with our capital without being liable for any losses.</p>
+          <div class="dash-mock">
+            <div class="rowline"><span>Total rewards</span><strong>$23,899.50</strong></div>
+            <div class="rowline"><span>Today's profit</span><strong>$10,211.23</strong></div>
+            <div class="rowline"><span>Balance</span><strong>$223,899.50</strong></div>
+          </div>
+          <div class="support-photo"></div>
+        </div>
+        <div class="band-card">
+          <h3>Fast & reliable rewards</h3>
+          <p>Receive rewards with a high profit split, protected by our reward guarantee.</p>
+          <div class="reward-tile">
+            <div class="figure">$120,590</div>
+            <div class="who">Profit share · Sunil, United Kingdom</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="rewards">
+  <div class="wrap">
+    <div class="blue-band" style="background:linear-gradient(160deg,#123B6E,#1560D6);">
+      <div class="section-head">
+        <div class="eyebrow-pill" style="background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.25);color:#fff;">💳 Rewards Guarantee</div>
+        <h2>Get paid in 24 hours or we pay you an extra $1,000</h2>
+      </div>
+      <div class="cert-strip">
+        <div class="cert-card"><div class="tag">LIFETIME PAYOUT</div><div class="amt">$120,590</div><div class="who">Sunil · UK</div></div>
+        <div class="cert-card"><div class="tag">LIFETIME PAYOUT</div><div class="amt">$78,661</div><div class="who">Neoh · Malaysia</div></div>
+        <div class="cert-card"><div class="tag">PAYOUT</div><div class="amt">$65,377</div><div class="who">Andrei · Romania</div></div>
+        <div class="cert-card"><div class="tag">PAYOUT</div><div class="amt">$39,273</div><div class="who">Brandon · USA</div></div>
+        <div class="cert-card"><div class="tag">PAYOUT</div><div class="amt">$19,812</div><div class="who">Jean · France</div></div>
+        <div class="cert-card"><div class="tag">PAYOUT</div><div class="amt">$11,383</div><div class="who">Uduak · Canada</div></div>
+      </div>
+      <div class="center-cta">
+        <a href="#pricing" class="btn btn-white">Get Funded</a>
+        <a href="#" class="btn btn-ghost-dark">More Rewards</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="face-strip">
+      <div class="face" style="background:#1C7FF2;">AK</div>
+      <div class="face" style="background:#F5952B;">RL</div>
+      <div class="face" style="background:#0F172A;">DM</div>
+      <div class="face" style="background:#2E8BF5;">HS</div>
+      <div class="face" style="background:#F2762B;">JT</div>
+    </div>
+    <div class="section-head">
+      <h2>Why Traders Love Tidewater</h2>
+    </div>
+    <div class="center-cta" style="margin-bottom:10px;">
+      <a href="#pricing" class="btn btn-primary">Get Funded</a>
+      <a href="#" class="btn btn-outline">Learn More</a>
+      <p style="margin-top:16px;color:var(--slate);font-size:0.85rem;">$283 for a $100k account</p>
+    </div>
+    <div class="feature-cards">
+      <div class="feature-card">
+        <h3><span class="icon-badge">💳</span>Reward guarantee</h3>
+        <p>Get paid in 24 hours or we pay you an extra $1,000.</p>
+        <div class="visual"></div>
+      </div>
+      <div class="feature-card">
+        <h3><span class="icon-badge">📈</span>100% refundable fees</h3>
+        <p>Your evaluation fee comes back on your first payout.</p>
+        <div class="visual"></div>
+      </div>
+      <div class="feature-card blue">
+        <h3><span class="icon-badge" style="background:rgba(255,255,255,0.2);color:#fff;">💠</span>100% profit split available</h3>
+        <p>Standard profit split is 90% — upgrade any time.</p>
+        <div class="visual"></div>
+      </div>
+      <div class="feature-card">
+        <h3><span class="icon-badge">📅</span>First reward on demand</h3>
+        <p>Fast bi-weekly rewards, or request payout as you go.</p>
+        <div class="visual"></div>
+      </div>
+      <div class="feature-card">
+        <h3><span class="icon-badge">🎯</span>Easy 2–10% profit targets</h3>
+        <p>Realistic objectives that don't punish good trading.</p>
+        <div class="visual"></div>
+      </div>
+      <div class="feature-card blue">
+        <h3><span class="icon-badge" style="background:rgba(255,255,255,0.2);color:#fff;">📊</span>Up to $2M in scaled capital</h3>
+        <p>Consistent traders scale automatically over time.</p>
+        <div class="visual"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="showcase">
+      <div>
+        <h2>Dive into Tidewater trading</h2>
+        <ul>
+          <li>✔ Spreads starting from 0.0</li>
+          <li>✔ True market pricing and execution</li>
+          <li>✔ Lowest spreads in the industry</li>
+        </ul>
+        <p style="font-weight:600;margin-bottom:16px;">Most popular trading platforms available</p>
+        <div class="platform-row">
+          <div class="p-tile"><img src="images/icon-platform-1.svg" alt="" width="40">Chart Trade</div>
+          <div class="p-tile"><img src="images/icon-platform-2.svg" alt="" width="40">TradeDesk</div>
+          <div class="p-tile"><img src="images/icon-platform-3.svg" alt="" width="40">MetaTrade 5</div>
+          <div class="p-tile"><img src="images/icon-platform-4.svg" alt="" width="40">cTrader</div>
+        </div>
+      </div>
+      <div class="showcase-mock">
+        <div class="dash-mock">
+          <div class="rowline"><span>Account balance</span><strong>$224,190.25</strong></div>
+          <div class="rowline"><span>Account size</span><strong>$200,000.00</strong></div>
+          <div class="rowline"><span>Total rewards</span><strong>$24,342.10</strong></div>
+          <div class="rowline"><span>Status</span><strong style="color:#16A34A;">Funded</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="support-section">
+  <div class="wrap">
+    <div class="orbit-icons">
+      <div class="oi">💬</div><div class="oi">✉️</div><div class="oi">🅵</div><div class="oi">🅧</div><div class="oi">▶</div>
+    </div>
+    <div class="section-head">
+      <h2>Fast & Professional Support</h2>
+      <p>We're always here to help. Check our FAQ for quick answers, or reach out to our team via social media, Discord, website chat, or email.</p>
+    </div>
+    <div class="center-cta">
+      <a href="#faq" class="btn btn-outline">FAQ</a>
+      <a href="#" class="btn btn-primary">Contact</a>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow-pill">Rated 9.4/10 · From 5k+ verified reviews</div>
+      <h2>What traders say about Tidewater</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card highlight">Join 300,000+<br>Aqua-style traders worldwide</div>
+      <div class="testi-card">
+        <div class="testi-head"><div class="testi-who"><span class="av">RK</span>Ravi K. 🇮🇳</div><span class="stars">★★★★★</span></div>
+        <p class="quote">No hidden rules, no odd lot restrictions. <strong>Rewards are fast and support responds quickly.</strong></p>
+      </div>
+      <div class="testi-card">
+        <div class="testi-head"><div class="testi-who"><span class="av">HW</span>Hans W. 🇩🇪</div><span class="stars">★★★★★</span></div>
+        <p class="quote">Straightforward rules, quick support. <strong>Had no problems getting my reward.</strong> On my second one now.</p>
+      </div>
+      <div class="testi-card">
+        <div class="testi-head"><div class="testi-who"><span class="av">PL</span>Pierre L. 🇫🇷</div><span class="stars">★★★★★</span></div>
+        <p class="quote">Completed both evaluations without issue. <strong>The reward was fast, no back and forth.</strong></p>
+      </div>
+      <div class="testi-card">
+        <div class="testi-head"><div class="testi-who"><span class="av">JR</span>James R. 🇬🇧</div><span class="stars">★★★★★</span></div>
+        <p class="quote">Just received my first reward of over $13k. <strong>Rules are fair and easy to follow.</strong></p>
+      </div>
+      <div class="testi-card">
+        <div class="testi-head"><div class="testi-who"><span class="av">ET</span>Emily T. 🇦🇺</div><span class="stars">★★★★★</span></div>
+        <p class="quote">The 90% split is generous and <strong>execution is fast and reliable.</strong> Very satisfied so far.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta-duo">
+      <div class="cta-card cream">
+        <h2>Dive into the Tidewater Community</h2>
+        <p>Sign up to enter our yearly $1.2M giveaway, plus exclusive discounts and promotions.</p>
+        <form class="email-form" onsubmit="return false;">
+          <input type="email" placeholder="Enter your email" required>
+          <button class="btn btn-primary" type="submit">Join now & enter the giveaway</button>
+        </form>
+      </div>
+      <div class="cta-card blue">
+        <p style="opacity:0.85;margin-bottom:6px;">Your journey starts here</p>
+        <h2>Make waves in trading</h2>
+        <a href="https://discord.com" class="btn btn-white">Join our Discord community</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head left">
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-list" style="border-top:1px solid var(--line);">
+      <div class="faq-item open" style="border-bottom:1px solid var(--line);">
+        <button class="faq-q" style="width:100%;text-align:left;background:none;border:none;padding:22px 0;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:1.02rem;display:flex;justify-content:space-between;cursor:pointer;">What is a prop trading firm?<span>+</span></button>
+        <div class="faq-a" style="color:var(--slate);padding-bottom:20px;">A firm that gives traders access to its own capital after they demonstrate consistent, risk-managed trading on an evaluation account.</div>
+      </div>
+      <div class="faq-item" style="border-bottom:1px solid var(--line);">
+        <button class="faq-q" style="width:100%;text-align:left;background:none;border:none;padding:22px 0;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:1.02rem;display:flex;justify-content:space-between;cursor:pointer;">Do I need experience to join?<span>+</span></button>
+        <div class="faq-a" style="display:none;color:var(--slate);padding-bottom:20px;">No formal experience is required — anyone who can meet the evaluation criteria is eligible.</div>
+      </div>
+      <div class="faq-item" style="border-bottom:1px solid var(--line);">
+        <button class="faq-q" style="width:100%;text-align:left;background:none;border:none;padding:22px 0;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:1.02rem;display:flex;justify-content:space-between;cursor:pointer;">How fast are payouts?<span>+</span></button>
+        <div class="faq-a" style="display:none;color:var(--slate);padding-bottom:20px;">Most requests are reviewed and paid within 24 hours.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand-block">
+        <a href="#" class="brand">Tidewater</a>
+        <div class="socials">
+          <a href="#">💬</a><a href="#">📷</a><a href="#">𝕏</a><a href="#">▶</a><a href="#">✈️</a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Trade</h4><a href="#">CFDs</a><a href="#">Futures</a></div>
+        <div class="footer-col"><h4>Product</h4><a href="#">Home</a><a href="#how-it-works">How it works</a><a href="#rewards">Rewards</a><a href="#">Affiliate</a></div>
+        <div class="footer-col"><h4>About</h4><a href="#">About</a><a href="#">Blog</a><a href="#">Guides</a></div>
+        <div class="footer-col"><h4>Support</h4><a href="#faq">FAQ</a><a href="#">Contact</a></div>
       </div>
     </div>
 
-    <header class="site-header">
-      <div class="container nav">
-        <a class="brand" href="#top" aria-label="Tidewater home">
-          <img class="brand__mark" src="images/logo-mark.svg" alt="">
-          <span>Tidewater</span>
-        </a>
-        <nav class="nav-links" aria-label="Primary navigation">
-          <a href="#pricing">Accounts</a>
-          <a href="#rewards">Rewards</a>
-          <a href="#how-it-works">How it works</a>
-          <a href="#benefits">Benefits</a>
-          <a href="#reviews">Reviews</a>
-          <a href="#faq">FAQ</a>
-        </nav>
-        <div class="nav-actions">
-          <a class="btn btn--ghost" href="#faq">Login</a>
-          <a class="btn btn--primary" href="#pricing">Get Funded</a>
-          <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
-            <span></span><span></span><span></span><span class="sr-only">Menu</span>
-          </button>
-        </div>
-      </div>
-    </header>
+    <div class="owned-by">
+      <div class="wordmark">Owned by Tidewater Group</div>
+      <p>Learn more about B2B collaboration & career opportunities.</p>
+      <a href="#" class="btn btn-white" style="align-self:flex-start;">Visit Tidewater Group</a>
+    </div>
 
-    <main id="top">
-      <section class="hero section">
-        <div class="hero__glow hero__glow--one"></div>
-        <div class="hero__glow hero__glow--two"></div>
-        <div class="container hero__grid">
-          <div class="hero__copy reveal">
-            <div class="rating-pill"><span class="rating-pill__stars">★★★★★</span><span>9.4/10 from verified traders</span></div>
-            <h1>Dive into success with our capital.</h1>
-            <p class="hero__lead">Choose the account model that fits your trading style, trade with clear rules, and keep more of what you earn.</p>
-            <div class="hero__actions">
-              <a class="btn btn--primary btn--large" href="#pricing">Choose an account</a>
-              <a class="btn btn--ghost btn--large" href="#how-it-works">How it works</a>
-            </div>
-            <div class="hero__proof">
-              <div><strong>$8M+</strong><span>Total rewards</span></div>
-              <div><strong>300K+</strong><span>Trader community</span></div>
-              <div><strong>24/7</strong><span>Support access</span></div>
-            </div>
-          </div>
+    <div class="pay-badges">
+      <span>VISA</span><span>MASTERCARD</span><span>AMEX</span><span>APPLE PAY</span><span>BTC</span><span>ETH</span>
+    </div>
 
-          <div class="hero__visual reveal">
-            <div class="dashboard-card">
-              <div class="dashboard-card__top">
-                <div><span>Funded account</span><strong>$200,000</strong></div>
-                <span class="status-pill">Active</span>
-              </div>
-              <div class="chart-card">
-                <div class="chart-card__grid"></div>
-                <svg viewBox="0 0 500 190" role="img" aria-label="Growth chart">
-                  <defs><linearGradient id="chartLine" x1="0" x2="1"><stop offset="0" stop-color="#16d8bc"/><stop offset="1" stop-color="#00a9ff"/></linearGradient></defs>
-                  <path d="M10 165 C70 150 90 125 135 138 S215 78 255 100 S330 55 365 70 S430 25 490 38" fill="none" stroke="url(#chartLine)" stroke-width="8" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <div class="dashboard-metrics">
-                <div><span>Total rewards</span><strong>$24,342</strong></div>
-                <div><span>Profit split</span><strong>Up to 100%</strong></div>
-                <div><span>Reward cycle</span><strong>On demand</strong></div>
-              </div>
-            </div>
-            <div class="floating-reward-card">
-              <span class="floating-reward-card__label">Latest reward</span>
-              <strong>$13,412</strong>
-              <p>Approved and paid to a Tidewater trader.</p>
-              <div class="avatar-stack"><span></span><span></span><span></span><span></span></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="brand-strip">
-        <div class="container brand-strip__inner"><span>Clear rules</span><span>Flexible models</span><span>Fast rewards</span><span>Trader-first support</span></div>
-      </div>
-
-      <section id="rewards" class="section">
-        <div class="container">
-          <div class="section-heading reveal"><span class="eyebrow">Recent rewards</span><h2>Traders getting paid.</h2><p>A clean snapshot of recent reward amounts from across the community.</p></div>
-          <div class="reward-grid" data-reward-grid></div>
-        </div>
-      </section>
-
-      <section id="pricing" class="section">
-        <div class="container">
-          <div class="builder-card reveal">
-            <div class="builder-card__header">
-              <div><span class="eyebrow">Account builder</span><h3>Choose your account</h3></div>
-              <div class="promo-box"><span>Current offer</span><strong>Up to 50% off</strong></div>
-            </div>
-            <div class="model-tabs" data-model-tabs></div>
-            <div class="size-tabs" data-size-tabs></div>
-
-            <div class="builder-layout">
-              <div class="model-panel">
-                <span class="model-panel__tag" data-model-tag></span>
-                <h4 data-model-title></h4>
-                <p data-model-description></p>
-                <div class="feature-list" data-feature-list></div>
-              </div>
-
-              <aside class="checkout-panel">
-                <div class="checkout-panel__top"><span>Total allocation</span><strong data-allocation>$100,000</strong></div>
-                <div class="quantity-control">
-                  <button type="button" data-qty-minus aria-label="Decrease quantity">−</button>
-                  <div><span data-quantity>1</span><small>Account(s)</small></div>
-                  <button type="button" data-qty-plus aria-label="Increase quantity">+</button>
-                </div>
-                <dl class="price-list">
-                  <div><dt>Base price</dt><dd data-base-price>$529</dd></div>
-                  <div><dt>Discount</dt><dd data-discount>25%</dd></div>
-                  <div><dt>You save</dt><dd data-savings>$132</dd></div>
-                </dl>
-                <div class="checkout-total"><span>Total today</span><strong data-total>$397</strong></div>
-                <a class="btn btn--white btn--full" href="#">Continue to checkout</a>
-                <p class="checkout-note">One-time purchase. Final checkout terms can be connected later.</p>
-              </aside>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="proof section">
-        <div class="container proof__grid">
-          <article class="proof-card reveal"><span>Community</span><strong>300K+</strong><p>Built for a broad global trader community.</p></article>
-          <article class="proof-card reveal"><span>Total rewards</span><strong>$8M+</strong><p>Reward-focused presentation with transparent account choices.</p></article>
-          <article class="proof-card reveal"><span>Support</span><strong>24/7</strong><p>Fast access to answers throughout the trader journey.</p></article>
-        </div>
-      </section>
-
-      <section id="how-it-works" class="section">
-        <div class="container">
-          <div class="section-heading reveal"><span class="eyebrow">Simple process</span><h2>How it works</h2><p>Pick the route that fits you, meet the rules, then focus on consistent trading.</p></div>
-          <div class="step-grid">
-            <article class="step-card reveal"><span>01</span><h3>Choose your model</h3><p>Select Instant, One Step, Two Step, or Elite and choose your account size.</p></article>
-            <article class="step-card reveal"><span>02</span><h3>Trade the rules</h3><p>Follow the account objectives and risk conditions for the model you selected.</p></article>
-            <article class="step-card reveal"><span>03</span><h3>Earn rewards</h3><p>Once eligible, request your reward according to the account cycle and terms.</p></article>
-          </div>
-        </div>
-      </section>
-
-      <section id="benefits" class="section">
-        <div class="container">
-          <div class="section-heading reveal"><span class="eyebrow">Trader benefits</span><h2>Built to stay clear.</h2><p>Important account advantages are presented in a fast-scanning, responsive grid.</p></div>
-          <div class="benefit-grid" data-benefit-grid></div>
-        </div>
-      </section>
-
-      <section class="platforms section">
-        <div class="container platforms__panel reveal">
-          <div class="platforms__copy"><span class="eyebrow">Trading access</span><h2>Use the setup that works for you.</h2><p>Keep the page focused on account selection while leaving room to connect your real trading-platform integrations later.</p><a class="btn btn--white" href="#pricing">View accounts</a></div>
-          <div class="platform-grid">
-            <div class="platform-card"><span>01</span><strong>Desktop trading</strong></div>
-            <div class="platform-card"><span>02</span><strong>Web access</strong></div>
-            <div class="platform-card"><span>03</span><strong>Mobile monitoring</strong></div>
-            <div class="platform-card"><span>04</span><strong>Clear execution data</strong></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="support section">
-        <div class="container support__grid">
-          <div class="support-card reveal"><span class="eyebrow">Support</span><h2>Fast, professional help.</h2><p>Connect live chat, Discord, email, or your help center when those destinations are ready.</p><div class="support-actions"><a class="btn btn--primary" href="#faq">Read FAQ</a><a class="btn btn--ghost" href="mailto:support@example.com">Contact support</a></div></div>
-          <div class="support-list reveal"><div><strong>Account questions</strong><span>Help traders understand models, sizes, pricing, and rules.</span></div><div><strong>Technical support</strong><span>Give clear paths for platform and dashboard assistance.</span></div><div><strong>Reward support</strong><span>Keep payout and reward guidance easy to find.</span></div></div>
-        </div>
-      </section>
-
-      <section id="reviews" class="section">
-        <div class="container">
-          <div class="section-heading reveal"><span class="eyebrow">Trader feedback</span><h2>What traders say</h2><p>Responsive testimonial cards generated directly from your shared data file.</p></div>
-          <div class="review-grid" data-review-grid></div>
-        </div>
-      </section>
-
-      <section id="faq" class="faq section">
-        <div class="container faq__grid">
-          <div class="faq__intro reveal"><span class="eyebrow">FAQ</span><h2>Questions, answered.</h2><p>These items are generated from data.js, so you only need to update your FAQ content in one place.</p></div>
-          <div class="faq-list" data-faq-list></div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-brand"><a class="brand brand--footer" href="#top"><img class="brand__mark" src="images/logo-mark.svg" alt=""><span>Tidewater</span></a><p>A modern funded-trading website structure with data-driven pricing and content.</p></div>
-          <div><h3>Trade</h3><a href="#pricing">Accounts</a><a href="#benefits">Benefits</a></div>
-          <div><h3>Company</h3><a href="#how-it-works">How it works</a><a href="#reviews">Reviews</a></div>
-          <div><h3>Support</h3><a href="#faq">FAQ</a><a href="mailto:support@example.com">Contact</a></div>
-        </div>
-        <div class="footer-bottom"><p>© <span data-year></span> Tidewater. All rights reserved.</p><p>Demo website structure — connect your production legal pages before launch.</p></div>
-      </div>
-    </footer>
+    <div class="footer-legal">
+      All content published by Tidewater is for general information purposes only and is not investment advice, an offer, or a solicitation to buy or sell any security. Tidewater is not a financial broker or advisor and does not accept client deposits; its exclusive activity is simulated trading. Trading foreign exchange and CFDs on margin carries a high level of risk and may not be suitable for all traders — you may sustain a total loss of your funds. Past performance is not indicative of future results. Always consult an independent financial professional before making any decisions. This page is a demonstration layout and is not affiliated with any real financial services provider.
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Tidewater. All rights reserved.</span>
+      <div class="links"><a href="#">Refund Policy</a><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+    </div>
   </div>
+</footer>
 
-  <div class="toast" role="status" aria-live="polite"></div>
-
-  <script src="data.js"></script>
-  <script src="main.js"></script>
-  <script src="pricing.js"></script>
-  <script src="script.js"></script>
+<script src="data.js"></script>
+<script src="pricing.js"></script>
+<script src="main.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
