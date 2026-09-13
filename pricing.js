@@ -1,5 +1,5 @@
 (() => {
-  const data = window.TIDEWATER_DATA;
+  const data = window.AQUA_DATA;
   if (!data) return;
 
   const state = { model: 'instant', size: 100000, qty: 1, split100: false };
