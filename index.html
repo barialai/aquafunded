@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tidewater | Funded Trading Capital, Kept Simple</title>
-<meta name="description" content="Trade with Tidewater's capital. Pass one evaluation, get funded up to $400k, and keep up to 100% of what you earn.">
+<title>AquaFunded | Funded Trading Capital</title>
+<meta name="description" content="Trade with AquaFunded capital. Choose your account, get funded, and keep up to 100% of your profit.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -12,62 +12,86 @@
 <body>
 
 <div class="promo-bar">
-  <div class="wrap">
-    <span>💳 25% Off + 150% Refund</span>
-    <span>⏱ Limited Time</span>
-    <span>Code: <strong>BACK2WORK</strong></span>
+  <div class="promo-bar__pattern" aria-hidden="true"></div>
+  <div class="promo-bar__inner">
+    <span class="promo-item"><span class="promo-icon" aria-hidden="true">▱</span>25% Off + 150% Refund</span>
+    <span class="promo-item"><span class="promo-icon promo-icon--clock" aria-hidden="true">◷</span>Limited Time</span>
+    <span class="promo-item">Code: <strong>BACK2WORK</strong></span>
   </div>
 </div>
 
 <header class="site-header">
-  <div class="wrap">
-    <a href="#" class="brand"><img src="images/logo-mark.svg" alt="">Tidewater</a>
-    <nav class="main-nav">
-      <a href="#pricing">Markets</a>
-      <a href="#how-it-works">How it works</a>
+  <div class="wrap header-wrap">
+    <a href="#" class="brand brand-wordmark" aria-label="AquaFunded home">AQUAFUNDED</a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#pricing" class="nav-with-chevron">Markets <span aria-hidden="true">⌄</span></a>
+      <a href="#how-it-works" class="nav-with-chevron">How it works <span aria-hidden="true">⌄</span></a>
       <a href="#rewards">Rewards</a>
       <a href="#">Affiliate</a>
       <a href="#">About</a>
-      <a href="#faq">FAQ</a>
+      <a href="#faq" class="nav-with-chevron">FAQ <span aria-hidden="true">⌄</span></a>
       <a href="#">Contact</a>
     </nav>
+
     <div class="header-actions">
+      <a href="#pricing" class="btn btn-primary header-funded">Get Funded</a>
       <a href="#" class="btn btn-login">Login</a>
-      <a href="#pricing" class="btn btn-primary">Get Funded</a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open navigation"><span></span><span></span><span></span></button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
 </header>
 
 <section class="hero">
-  <div class="hero-bg" aria-hidden="true"><img src="images/hero-orbs.svg" alt="" style="width:100%;height:100%;object-fit:cover;"></div>
-  <div class="wrap">
+  <div class="hero-bg" aria-hidden="true">
+    <img src="images/hero-orbs.svg" alt="">
+  </div>
+
+  <div class="wrap hero-wrap">
     <div class="avatar-row">
-      <div class="avatar-stack">
-        <span class="av">JM</span><span class="av">RK</span><span class="av">HW</span>
+      <div class="avatar-stack" aria-hidden="true">
+        <img src="images/avatar-1.svg" alt="">
+        <img src="images/avatar-2.svg" alt="">
+        <img src="images/avatar-3.svg" alt="">
       </div>
-      <span style="font-size:0.92rem;font-weight:600;">Join <strong>300,000+ Traders</strong></span>
+      <span>Join <strong>300,000+ Traders</strong></span>
     </div>
-    <div class="rating-pill">
-      <span><b>9.4/10</b> ★</span><span class="sep">|</span><span>From <b>5k+</b> verified reviews</span>
+
+    <div class="rating-pill" aria-label="Rated 9.4 out of 10 from more than 5,000 verified reviews">
+      <span class="rating-pill__score"><strong>Rated 9.4/10 ★</strong></span>
+      <span class="rating-pill__reviews">From <strong>5k+ verified reviews</strong></span>
     </div>
-    <h1>Dive into Success with our <span class="accent">Capital</span></h1>
-    <p class="lede">Trade with our capital and <strong>keep 100% of the profit</strong>, paid on demand.</p>
-    <div class="hero-cta"><a href="#pricing" class="btn btn-primary">Get Funded</a></div>
+
+    <h1>Dive into Success<br>with our <span class="accent">Capital</span></h1>
+
+    <p class="lede">Trade with our Capital and<br><strong>keep 100% of the Profit</strong><br>paid on demand</p>
+
+    <div class="hero-cta">
+      <a href="#pricing" class="btn btn-primary">Get Funded</a>
+    </div>
+
     <div class="hero-note-row">
-      <span><span class="dot-icon"></span>Reward Guarantee</span>
-      <span><span class="dot-icon"></span>Millions Paid to Traders</span>
+      <span><span class="hero-note-icon hero-note-icon--seal" aria-hidden="true"></span>Reward Guarantee</span>
+      <span><span class="hero-note-icon hero-note-icon--coins" aria-hidden="true"></span>Millions Paid to Traders</span>
     </div>
 
     <div class="offer-banner">
-      <div>
-        <div style="font-size:0.85rem;opacity:0.85;">BACK2WORK</div>
-        <div class="big">25% OFF + 150% Refund</div>
+      <img class="offer-banner__art" src="images/promo-beach.svg" alt="" aria-hidden="true">
+      <div class="offer-banner__left">
+        <span class="offer-kicker">BACK2WORK</span>
+        <strong class="big">25% OFF 150% Refund</strong>
       </div>
-      <div class="code-tag">⏱ Limited Time · Code: BACK2WORK</div>
+      <div class="offer-banner__middle"><span class="offer-clock" aria-hidden="true">◷</span> Limited Time</div>
+      <button class="code-tag copy-code-btn" type="button" data-copy="BACK2WORK">Code: <strong>BACK2WORK</strong></button>
     </div>
   </div>
 </section>
+
+<button class="chat-fab" type="button" aria-label="Open support chat">
+  <span aria-hidden="true"></span>
+</button>
 
 <section>
   <div class="wrap">
@@ -120,7 +144,7 @@
 
       <div class="limited-bar">
         <div class="left"><span>⏱ Limited Time</span><span>»</span><span>25% OFF + 150% Refund</span></div>
-        <div class="code">BACK2WORK <span style="opacity:0.8;">Copy</span></div>
+        <button class="code copy-code-btn" type="button" data-copy="BACK2WORK">BACK2WORK <span>Copy</span></button>
       </div>
 
       <div class="calc-grid">
@@ -327,7 +351,7 @@
       <div class="face" style="background:#F2762B;">JT</div>
     </div>
     <div class="section-head">
-      <h2>Why Traders Love Tidewater</h2>
+      <h2>Why Traders Love AquaFunded</h2>
     </div>
     <div class="center-cta" style="margin-bottom:10px;">
       <a href="#pricing" class="btn btn-primary">Get Funded</a>
@@ -373,7 +397,7 @@
   <div class="wrap">
     <div class="showcase">
       <div>
-        <h2>Dive into Tidewater trading</h2>
+        <h2>Dive into AquaFunded trading</h2>
         <ul>
           <li>✔ Spreads starting from 0.0</li>
           <li>✔ True market pricing and execution</li>
@@ -419,7 +443,7 @@
   <div class="wrap">
     <div class="section-head">
       <div class="eyebrow-pill">Rated 9.4/10 · From 5k+ verified reviews</div>
-      <h2>What traders say about Tidewater</h2>
+      <h2>What traders say about AquaFunded</h2>
     </div>
     <div class="testi-grid">
       <div class="testi-card highlight">Join 300,000+<br>Aqua-style traders worldwide</div>
@@ -451,7 +475,7 @@
   <div class="wrap">
     <div class="cta-duo">
       <div class="cta-card cream">
-        <h2>Dive into the Tidewater Community</h2>
+        <h2>Dive into the AquaFunded Community</h2>
         <p>Sign up to enter our yearly $1.2M giveaway, plus exclusive discounts and promotions.</p>
         <form class="email-form" onsubmit="return false;">
           <input type="email" placeholder="Enter your email" required>
@@ -493,7 +517,7 @@
   <div class="wrap">
     <div class="footer-top">
       <div class="footer-brand-block">
-        <a href="#" class="brand">Tidewater</a>
+        <a href="#" class="brand">AquaFunded</a>
         <div class="socials">
           <a href="#">💬</a><a href="#">📷</a><a href="#">𝕏</a><a href="#">▶</a><a href="#">✈️</a>
         </div>
@@ -507,9 +531,9 @@
     </div>
 
     <div class="owned-by">
-      <div class="wordmark">Owned by Tidewater Group</div>
+      <div class="wordmark">Owned by AquaFunded Group</div>
       <p>Learn more about B2B collaboration & career opportunities.</p>
-      <a href="#" class="btn btn-white" style="align-self:flex-start;">Visit Tidewater Group</a>
+      <a href="#" class="btn btn-white" style="align-self:flex-start;">Visit AquaFunded Group</a>
     </div>
 
     <div class="pay-badges">
@@ -517,10 +541,10 @@
     </div>
 
     <div class="footer-legal">
-      All content published by Tidewater is for general information purposes only and is not investment advice, an offer, or a solicitation to buy or sell any security. Tidewater is not a financial broker or advisor and does not accept client deposits; its exclusive activity is simulated trading. Trading foreign exchange and CFDs on margin carries a high level of risk and may not be suitable for all traders — you may sustain a total loss of your funds. Past performance is not indicative of future results. Always consult an independent financial professional before making any decisions. This page is a demonstration layout and is not affiliated with any real financial services provider.
+      All content published by AquaFunded is for general information purposes only and is not investment advice, an offer, or a solicitation to buy or sell any security. AquaFunded is not a financial broker or advisor and does not accept client deposits; its exclusive activity is simulated trading. Trading foreign exchange and CFDs on margin carries a high level of risk and may not be suitable for all traders — you may sustain a total loss of your funds. Past performance is not indicative of future results. Always consult an independent financial professional before making any decisions. This page is a demonstration layout and is not affiliated with any real financial services provider.
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Tidewater. All rights reserved.</span>
+      <span>© 2026 AquaFunded. All rights reserved.</span>
       <div class="links"><a href="#">Refund Policy</a><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
     </div>
   </div>
