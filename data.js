@@ -1,4 +1,4 @@
-window.TIDEWATER_DATA = {
+window.AQUA_DATA = {
   models: {
     instant: {
       label: "Instant",
